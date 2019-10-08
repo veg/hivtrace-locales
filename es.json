@@ -90,7 +90,7 @@
     "missing": "Faltantes"
   },
   "nodes_tab" : {
-    "clustered_invidiuals":  "Individuos en Agrupamientos",
+    "clustered_individuals":  "Individuos en Agrupamientos",
     "export_to_csv": "Exportar a CSV"
   }
  }
