@@ -1,4 +1,4 @@
-# HIVTRACE Language Package
+# HIVTRACE Locales
 
 ## Overview
 
