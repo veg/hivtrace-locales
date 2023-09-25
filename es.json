@@ -87,7 +87,12 @@
     "warning": "Advertencia",
     "yes": "Sí",
     "no": "No",
-    "next": "Seiguiente"
+    "next": "Seiguiente",
+    "success": "Éxito",
+    "error": "Error",
+    "continue": "Continuar",
+    "uid": "UID",
+    "genetic_sequences": "Secuencias Genéticas"
   },
   "network_tab": {
     "color": "Color",
@@ -125,7 +130,8 @@
     "allow_all_objects_to_float": "Dejar flotar todos los objetos mostrados",
     "export_colors": "Copiar esquema de color",
     "collapse_cluster": "Colapsar clúster",
-    "reset_layout": "Restablecer visualización"
+    "reset_layout": "Restablecer visualización",
+    "category_limit": "Límite Categoría"
   },
   "statistics": {
     "network_statistics": "Estadísticas de la Red",
@@ -152,6 +158,8 @@
     "view": "Ver",
     "expand": "Expandir",
     "size": "Tamaño",
+    "genotyped_last_two_months": "# genotipado <= 2 meses",
+    "genotyped_last_two_months_ratio": "Proporción genotipado reciente",
     "number_of_genotypes_in_past_2_months": "No. genotipos añadidos últimos 2 meses",
     "scaled_number_of_genotypes_in_past_2_months": "No. escalado genotipos añadidos últimos 2 meses",
     "group_by_attribute": "Agrupar por atributo",

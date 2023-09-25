@@ -112,6 +112,7 @@
     "show_epidemiological_growth": "Show epidemiological growth",
     "only_recent_clusters": "Show only clusters changed in the recent 12 months",
     "show_removed_edges": "Show removed edges",
+    "min_cluster_size": "Minimum cluster size",
     "toggle_epicurve": "Toggle Epicurve",
     "text_in_attributes": "Text in attributes",
     "cluster_display_info": "Only displaying clusters with nodes dates in the last 12 months [use the Clusters menu to change this]",
