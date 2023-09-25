@@ -29,7 +29,7 @@
     "delete_total_history_msg": "This will delete all listed stored networks. Are you absolutely sure you want to do this?"
   },
   "submission": {
-    "formatting_info": "Formatting Information",
+    "formatting_info": "Resources",
     "select": "Select Sequence File",
     "use_defaults": "Use Defaults",
     "distance_threshold": "Distance Threshold",
