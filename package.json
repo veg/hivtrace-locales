@@ -1,6 +1,6 @@
 {
   "name": "hivtrace-locales",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "translations for hivtrace",
   "main": "index.js",
   "repository": "git@github.com:veg/hivtrace-locales.git",
