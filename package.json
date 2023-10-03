@@ -4,7 +4,7 @@
   "description": "translations for hivtrace",
   "main": "index.js",
   "repository": "git@github.com:veg/hivtrace-locales.git",
-  "author": ["Steven Weaver <sweaver@temple.edu>", "Joel Wertheim <jwertheim@ucsd.edu>"],
+  "author": ["Steven Weaver <sweaver@temple.edu>", "Vanessa M Dávila Conn <vanessa.davila@cieni.org.mx>", "Claudia García Morales <claudia.garcia@cieni.org.mx>", "Joel Wertheim <jwertheim@ucsd.edu>"],
   "license": "MIT",
   "files": [
     "en.json",
