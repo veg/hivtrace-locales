@@ -197,6 +197,11 @@
     "stored_network_count": "Stored Network Count",
     "class_type": "Class Type",
     "goto_site_page": "Visit",
-    "add_site": "Add Site"
+    "add_site": "Add Site",
+    "variable_options": "Variable Options".
+    "variable": "Variable",
+    "add_variable": "Add variable",
+    "label" : "Label",
+    "type" :"Type"
   }
 }
