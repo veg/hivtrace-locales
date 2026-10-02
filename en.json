@@ -34,7 +34,31 @@
     "conduct_stand_alone_analysis": "Conduct Stand-Alone Analysis",
     "start_a_new_network": "Start a New Network",
     "delete_caution_msg": "This will delete all runs stored after {date} at {time}. Are you absolutely sure you want to do this?",
-    "delete_total_history_msg": "This will delete all listed stored networks. Are you absolutely sure you want to do this?"
+    "delete_total_history_msg": "This will delete all listed stored networks. Are you absolutely sure you want to do this?",
+    "contact_hivtrace": "Contact Seguro HIV-TRACE",
+    "stored": "Stored",
+    "delete_history_failed": "The network history could not be deleted. Please try again.",
+    "session_expired_title": "Session expired",
+    "session_expired": "Your session has expired. Please sign in again.",
+    "signout": "Sign Out",
+    "signout_confirm": "Sign out of HIV-TRACE?",
+    "tooltip_go_to_network": "Open this network's results",
+    "tooltip_stand_alone_analysis": "Run a stand-alone analysis using this network's input data",
+    "tooltip_append_network": "Append new sequences to this network",
+    "tooltip_revert_to_this_network": "Restore this network as the latest. Deletes all newer networks.",
+    "network_date": "Reference date",
+    "uploaded_records": "Uploaded records",
+    "uploaded_persons": "Uploaded persons",
+    "analysed_sequences": "Analysed sequences",
+    "analysed_persons": "Persons with an analysed sequence",
+    "clustered_persons": "Persons in clusters",
+    "sequences_persons": "Sequences / Persons",
+    "not_available": "N/A",
+    "alt": {
+      "logo": "Seguro HIV-TRACE logo"
+    },
+    "dev_edition": "Development edition",
+    "staging_edition": "Staging edition"
   },
   "submission": {
     "formatting_info": "Resources",
@@ -53,7 +77,14 @@
     "average": "Average",
     "warning": "Warning: The specified parameter is invalid! The parameter only accepts values within the range",
     "no_file_provided": "Warning : No file was provided.",
-    "notice": "Notice : The specified parameter is valid, but different from the recommended default."
+    "notice": "Notice : The specified parameter is valid, but different from the recommended default.",
+    "upload_failed": "The upload could not be processed. Please check the file and try again.",
+    "upload_network_error": "The upload failed. Please check your connection and try again.",
+    "upload_parse_failed": "The file could not be processed. Please check that it is a valid CSV file.",
+    "upload_not_allowed": "This file type is not accepted. Please upload the CSV file again.",
+    "network_date": "Reference date (optional)",
+    "network_date_desc": "If empty, a date in the file name (_YYYYMMDD) or today is used.",
+    "network_date_invalid": "The reference date is not valid. Use a date from 1990-01-01 to today, in the format YYYY-MM-DD."
   },
   "validation": {
     "parsing": "Parsing File",
@@ -64,7 +95,8 @@
     "sequence_error": "The file needs a Genetic Sequences field.",
     "fewer_records": "The uploaded file has fewer records than the most recently completed analysis.",
     "ignore_and_continue": "Ignore and Continue",
-    "go_back": "Go back"
+    "go_back": "Go back",
+    "warning": "Warning"
   },
   "progress": {
     "job_in_progress": "Job in Progress",
@@ -75,7 +107,11 @@
     "screening_contaminants": "Screening contaminants",
     "computing_distances": "Computing pairwise TN93 distances",
     "inferring_network": "Inferring, filtering, and analyzing molecular transmission network",
-    "completed": "Completed"
+    "completed": "Completed",
+    "annotating_network": "Annotating network",
+    "exporting_csv": "Exporting CSV files",
+    "public_distances": "Computing pairwise TN93 distances against a public database",
+    "public_network": "Inferring connections to sequences in a public database"
   },
   "general": {
     "network": "Network",
@@ -100,7 +136,11 @@
     "error": "Error",
     "continue": "Continue",
     "uid": "UID",
-    "genetic_sequences": "Genetic Sequences"
+    "genetic_sequences": "Genetic Sequences",
+    "invalid_id": "Invalid id",
+    "not_found": "Not found",
+    "captcha_failed": "We're sorry, but we've determined that you are a robot. Please try again.",
+    "csrf_reload": "This page has expired. Please reload it and try again."
   },
   "network_tab": {
     "color": "Color",
@@ -178,7 +218,8 @@
   "nodes_tab": {
     "clustered_invidiuals": "Clustered Invidiuals",
     "export_to_csv": "Export to CSV",
-    "filter_on": "Filter On"
+    "filter_on": "Filter On",
+    "clustered_individuals": "Clustered Individuals"
   },
   "attributes_tab": {
     "show_as": "Show as %",
@@ -210,6 +251,79 @@
     "variable": "Variable",
     "add_variable": "Add variable",
     "label" : "Label",
-    "type" :"Type"
+    "type" :"Type",
+    "password_mismatch": "Passwords didn't match",
+    "password_policy": "Invalid Password : At least one (1) character from 3 of the four (4) character categories (A-Z, a-z, 0-9, special characters), and minimum length of eight (8) characters for regular user passwords.",
+    "error_duplicate_email": "A user with this e-mail address already exists.",
+    "error_invalid_user": "Please check the user details and try again.",
+    "error_user_not_found": "This user no longer exists. Reload the page and try again.",
+    "error_save_failed": "The user could not be saved. Please try again.",
+    "invite_not_sent": "The user was added, but the invitation could not be prepared. Ask the user to reset their password to sign in.",
+    "phone_number": "Phone number",
+    "job_title": "Job title",
+    "exports": "Exports",
+    "export_users": "Users (CSV)",
+    "export_sites": "Sites (CSV)",
+    "export_summary_csv": "Summary report (CSV)",
+    "export_summary_txt": "Summary report (TXT)",
+    "first_name": "First name",
+    "last_name": "Last name",
+    "site_id": "Site ID",
+    "executive": "Executive",
+    "latest_network_size": "Latest stored network size",
+    "latest_network_date": "Latest stored network date",
+    "summary_active_users": "Total Active Users",
+    "summary_executive_users": "Executive Users",
+    "summary_active_sites": "Total Active Sites",
+    "summary_total_network_size": "Total Network Size Across Sites"
+  },
+  "job": {
+    "results_load_failed": "The results could not be loaded. Please reload the page or contact us.",
+    "upload_failed": "The uploaded files did not reach the compute server intact. Please submit the job again.",
+    "not_submitted": "The job could not be submitted. Please submit the job again.",
+    "failed": "The analysis could not be completed. Please try again or contact us.",
+    "results_failed": "Job completed but its results could not be processed",
+    "cancelled": "Job was cancelled",
+    "timed_out": "The analysis did not finish in the allowed time. Please submit the job again.",
+    "status_delayed": "Status updates are delayed. Retrying...",
+    "error_prefix": "There was an error!",
+    "records_without_sequence": "{{count}} record without sequence data",
+    "records_without_sequence_plural": "{{count}} records without sequence data",
+    "records_without_sequence_help": "These records are kept with the attributes but are not included in the network analysis, which uses sequences only."
+  },
+  "downloads": {
+    "tab": "Downloads",
+    "network_files": "Network files",
+    "input_files": "Input files",
+    "admin_files": "Administrator files",
+    "results_files": "Results files",
+    "nodes_csv": "Nodes CSV",
+    "unaligned_fasta": "Unaligned FASTA (input sequences)",
+    "results_json": "Results JSON",
+    "raw_input_csv": "Raw input CSV",
+    "not_available": "Not available",
+    "not_available_title": "This file was not produced for this network. Re-run the network to create it.",
+    "file_not_available": "This file is not available for this network."
+  },
+  "results": {
+    "alt": {
+      "cluster": "Cluster symbol: circle with a thick rim",
+      "node": "Node symbol: circle with a thin rim",
+      "matching_node": "Node that matches the search",
+      "cluster_match_25": "Cluster where 25% of nodes match the search",
+      "cluster_match_75": "Cluster where 75% of nodes match the search"
+    }
+  },
+  "mail": {
+    "new_user_request_subject": "New user added to Secure HIV-TRACE",
+    "new_user_request_intro": "A new user has been added to Secure HIV-TRACE.",
+    "name": "Name",
+    "email": "E-mail",
+    "site": "Site",
+    "role": "Role",
+    "added_by": "Added by",
+    "unknown": "unknown",
+    "app_link": "Secure HIV-TRACE can be accessed at",
+    "signoff": "Kind Regards,"
   }
 }
