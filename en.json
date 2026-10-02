@@ -34,7 +34,14 @@
     "conduct_stand_alone_analysis": "Conduct Stand-Alone Analysis",
     "start_a_new_network": "Start a New Network",
     "delete_caution_msg": "This will delete all runs stored after {date} at {time}. Are you absolutely sure you want to do this?",
-    "delete_total_history_msg": "This will delete all listed stored networks. Are you absolutely sure you want to do this?"
+    "delete_total_history_msg": "This will delete all listed stored networks. Are you absolutely sure you want to do this?",
+    "contact_hivtrace": "Contact Seguro HIV-TRACE",
+    "stored": "Stored",
+    "delete_history_failed": "The network history could not be deleted. Please try again.",
+    "session_expired_title": "Session expired",
+    "session_expired": "Your session has expired. Please sign in again.",
+    "signout": "Sign Out",
+    "signout_confirm": "Sign out of HIV-TRACE?"
   },
   "submission": {
     "formatting_info": "Resources",
@@ -53,7 +60,11 @@
     "average": "Average",
     "warning": "Warning: The specified parameter is invalid! The parameter only accepts values within the range",
     "no_file_provided": "Warning : No file was provided.",
-    "notice": "Notice : The specified parameter is valid, but different from the recommended default."
+    "notice": "Notice : The specified parameter is valid, but different from the recommended default.",
+    "upload_failed": "The upload could not be processed. Please check the file and try again.",
+    "upload_network_error": "The upload failed. Please check your connection and try again.",
+    "upload_parse_failed": "The file could not be processed. Please check that it is a valid CSV file.",
+    "upload_not_allowed": "This file type is not accepted. Please upload the CSV file again."
   },
   "validation": {
     "parsing": "Parsing File",
@@ -64,7 +75,8 @@
     "sequence_error": "The file needs a Genetic Sequences field.",
     "fewer_records": "The uploaded file has fewer records than the most recently completed analysis.",
     "ignore_and_continue": "Ignore and Continue",
-    "go_back": "Go back"
+    "go_back": "Go back",
+    "warning": "Warning"
   },
   "progress": {
     "job_in_progress": "Job in Progress",
@@ -100,7 +112,11 @@
     "error": "Error",
     "continue": "Continue",
     "uid": "UID",
-    "genetic_sequences": "Genetic Sequences"
+    "genetic_sequences": "Genetic Sequences",
+    "invalid_id": "Invalid id",
+    "not_found": "Not found",
+    "captcha_failed": "We're sorry, but we've determined that you are a robot. Please try again.",
+    "csrf_reload": "This page has expired. Please reload it and try again."
   },
   "network_tab": {
     "color": "Color",
@@ -178,7 +194,8 @@
   "nodes_tab": {
     "clustered_invidiuals": "Clustered Invidiuals",
     "export_to_csv": "Export to CSV",
-    "filter_on": "Filter On"
+    "filter_on": "Filter On",
+    "clustered_individuals": "Clustered Individuals"
   },
   "attributes_tab": {
     "show_as": "Show as %",
@@ -210,6 +227,21 @@
     "variable": "Variable",
     "add_variable": "Add variable",
     "label" : "Label",
-    "type" :"Type"
+    "type" :"Type",
+    "password_mismatch": "Passwords didn't match",
+    "password_policy": "Invalid Password : At least one (1) character from 3 of the four (4) character categories (A-Z, a-z, 0-9, special characters), and minimum length of eight (8) characters for regular user passwords.",
+    "error_duplicate_email": "A user with this e-mail address already exists.",
+    "error_invalid_user": "Please check the user details and try again.",
+    "error_user_not_found": "This user no longer exists. Reload the page and try again.",
+    "error_save_failed": "The user could not be saved. Please try again.",
+    "invite_not_sent": "The user was added, but the invitation could not be prepared. Ask the user to reset their password to sign in."
+  },
+  "job": {
+    "results_load_failed": "The results could not be loaded. Please reload the page or contact us.",
+    "upload_failed": "The uploaded files did not reach the compute server intact. Please submit the job again.",
+    "not_submitted": "The job could not be submitted. Please submit the job again.",
+    "failed": "The analysis could not be completed. Please try again or contact us.",
+    "results_failed": "Job completed but its results could not be processed",
+    "cancelled": "Job was cancelled"
   }
 }

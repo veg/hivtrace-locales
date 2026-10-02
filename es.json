@@ -34,7 +34,13 @@
     "conduct_stand_alone_analysis": "Llevar a cabo un Análisis Autónomo",
     "start_a_new_network": "Comenzar Nueva Red",
     "delete_caution_msg": "¿Está seguro de que quiere continuar? Se eliminarán todas las corridas guardadas después del {date} a las {time}",
-    "delete_total_history_msg": "¿Está seguro de que quiere continuar? Se eliminará todo el historial de corridas"
+    "delete_total_history_msg": "¿Está seguro de que quiere continuar? Se eliminará todo el historial de corridas",
+    "stored": "Guardado",
+    "delete_history_failed": "No se pudo eliminar el historial de redes. Inténtelo de nuevo.",
+    "session_expired_title": "Sesión expirada",
+    "session_expired": "Su sesión ha expirado. Por favor, inicie sesión de nuevo.",
+    "signout": "Cerrar sesión",
+    "signout_confirm": "¿Desea cerrar sesión en HIV-TRACE?"
   },
   "submission": {
     "formatting_info": "Recursos informáticos",
@@ -53,7 +59,11 @@
     "average": "Promediar",
     "warning": "Advertencia: Parámetro especificado inválido! El parámetro sólo acepta valores dentro del intervalo",
     "no_file_provided": "Advertencia : No se ha proporcionado ningún archivo.",
-    "notice": "Aviso : El parámetro especificado es válido, pero diferente del recomendado por defecto"
+    "notice": "Aviso : El parámetro especificado es válido, pero diferente del recomendado por defecto",
+    "upload_failed": "No se pudo procesar el archivo subido. Revise el archivo e inténtelo de nuevo.",
+    "upload_network_error": "No se pudo subir el archivo. Revise su conexión e inténtelo de nuevo.",
+    "upload_parse_failed": "No se pudo procesar el archivo. Verifique que sea un archivo CSV válido.",
+    "upload_not_allowed": "Este tipo de archivo no se acepta. Vuelva a subir el archivo CSV."
   },
   "validation": {
     "parsing": "Analizando archivo",
@@ -64,7 +74,8 @@
     "sequence_error": "El archivo requiere un campo de Secuencias Genéticas.",
     "fewer_records": "El archivo cargado contiene menos registros que el último análisis completado.",
     "ignore_and_continue": "Ignorar y continuar",
-    "go_back": "Regresar"
+    "go_back": "Regresar",
+    "warning": "Advertencia"
   },
   "progress": {
     "job_in_progress": "Trabajo en curso",
@@ -100,7 +111,11 @@
     "error": "Error",
     "continue": "Continuar",
     "uid": "UID",
-    "genetic_sequences": "Secuencias Genéticas"
+    "genetic_sequences": "Secuencias Genéticas",
+    "invalid_id": "Identificador no válido",
+    "not_found": "No encontrado",
+    "captcha_failed": "Lo sentimos, pero hemos determinado que usted es un robot. Inténtelo de nuevo.",
+    "csrf_reload": "Esta página ha caducado. Vuelva a cargarla e inténtelo de nuevo."
   },
   "network_tab": {
     "color": "Color",
@@ -178,7 +193,8 @@
   "nodes_tab": {
     "clustered_invidiuals": "Individuos en clúster",
     "export_to_csv": "Exportar como CSV",
-    "filter_on": "Filtro activo"
+    "filter_on": "Filtro activo",
+    "clustered_individuals": "Individuos en clúster"
   },
   "attributes_tab": {
     "show_as": "Mostrar en %",
@@ -210,6 +226,21 @@
     "variable": "Variable",
     "add_variable": "Agregar variable",
     "label" : "Etiqueta",
-    "type" :"Tipo"
+    "type" :"Tipo",
+    "password_mismatch": "Las contraseñas no coinciden",
+    "password_policy": "Contraseña no válida: debe contener al menos un (1) carácter de 3 de las cuatro (4) categorías de caracteres (A-Z, a-z, 0-9, caracteres especiales) y una longitud mínima de ocho (8) caracteres para contraseñas de usuarios regulares.",
+    "error_duplicate_email": "Ya existe un usuario con este correo electrónico.",
+    "error_invalid_user": "Revise los datos del usuario e inténtelo de nuevo.",
+    "error_user_not_found": "Este usuario ya no existe. Vuelva a cargar la página e inténtelo de nuevo.",
+    "error_save_failed": "No se pudo guardar el usuario. Inténtelo de nuevo.",
+    "invite_not_sent": "Se agregó el usuario, pero no se pudo preparar la invitación. Pida al usuario que restablezca su contraseña para iniciar sesión."
+  },
+  "job": {
+    "results_load_failed": "No se pudieron cargar los resultados. Vuelva a cargar la página o contáctenos.",
+    "upload_failed": "Los archivos subidos no llegaron íntegros al servidor de cómputo. Envíe el trabajo de nuevo.",
+    "not_submitted": "No se pudo enviar el trabajo. Envíe el trabajo de nuevo.",
+    "failed": "No se pudo completar el análisis. Inténtelo de nuevo o contáctenos.",
+    "results_failed": "El trabajo terminó, pero no se pudieron procesar sus resultados.",
+    "cancelled": "El trabajo fue cancelado."
   }
 }
