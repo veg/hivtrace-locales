@@ -86,7 +86,11 @@
     "screening_contaminants": "En búsqueda de contaminantes",
     "computing_distances": "Calculando distancias TN93",
     "inferring_network": "Infiriendo, filtrando y analizando la red molecular",
-    "completed": "Completado"
+    "completed": "Completado",
+    "annotating_network": "Anotando la red",
+    "exporting_csv": "Exportando archivos CSV",
+    "public_distances": "Calculando distancias TN93 contra una base de datos pública",
+    "public_network": "Infiriendo conexiones con secuencias de una base de datos pública"
   },
   "general": {
     "network": "Red",
@@ -241,6 +245,9 @@
     "not_submitted": "No se pudo enviar el trabajo. Envíe el trabajo de nuevo.",
     "failed": "No se pudo completar el análisis. Inténtelo de nuevo o contáctenos.",
     "results_failed": "El trabajo terminó, pero no se pudieron procesar sus resultados.",
-    "cancelled": "El trabajo fue cancelado."
+    "cancelled": "El trabajo fue cancelado.",
+    "timed_out": "El análisis no terminó en el tiempo permitido. Envíe el trabajo de nuevo.",
+    "status_delayed": "Las actualizaciones de estado se están retrasando. Reintentando...",
+    "error_prefix": "¡Se produjo un error!"
   }
 }

@@ -87,7 +87,11 @@
     "screening_contaminants": "Screening contaminants",
     "computing_distances": "Computing pairwise TN93 distances",
     "inferring_network": "Inferring, filtering, and analyzing molecular transmission network",
-    "completed": "Completed"
+    "completed": "Completed",
+    "annotating_network": "Annotating network",
+    "exporting_csv": "Exporting CSV files",
+    "public_distances": "Computing pairwise TN93 distances against a public database",
+    "public_network": "Inferring connections to sequences in a public database"
   },
   "general": {
     "network": "Network",
@@ -242,6 +246,9 @@
     "not_submitted": "The job could not be submitted. Please submit the job again.",
     "failed": "The analysis could not be completed. Please try again or contact us.",
     "results_failed": "Job completed but its results could not be processed",
-    "cancelled": "Job was cancelled"
+    "cancelled": "Job was cancelled",
+    "timed_out": "The analysis did not finish in the allowed time. Please submit the job again.",
+    "status_delayed": "Status updates are delayed. Retrying...",
+    "error_prefix": "There was an error!"
   }
 }
