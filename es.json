@@ -55,7 +55,9 @@
     "not_available": "N/D",
     "alt": {
       "logo": "Logotipo de Seguro HIV-TRACE"
-    }
+    },
+    "dev_edition": "Edición de desarrollo",
+    "staging_edition": "Edición de pruebas"
   },
   "submission": {
     "formatting_info": "Recursos informáticos",
@@ -255,7 +257,24 @@
     "error_invalid_user": "Revise los datos del usuario e inténtelo de nuevo.",
     "error_user_not_found": "Este usuario ya no existe. Vuelva a cargar la página e inténtelo de nuevo.",
     "error_save_failed": "No se pudo guardar el usuario. Inténtelo de nuevo.",
-    "invite_not_sent": "Se agregó el usuario, pero no se pudo preparar la invitación. Pida al usuario que restablezca su contraseña para iniciar sesión."
+    "invite_not_sent": "Se agregó el usuario, pero no se pudo preparar la invitación. Pida al usuario que restablezca su contraseña para iniciar sesión.",
+    "phone_number": "Número de teléfono",
+    "job_title": "Cargo",
+    "exports": "Exportaciones",
+    "export_users": "Usuarios (CSV)",
+    "export_sites": "Sitios (CSV)",
+    "export_summary_csv": "Informe resumido (CSV)",
+    "export_summary_txt": "Informe resumido (TXT)",
+    "first_name": "Nombre",
+    "last_name": "Apellido",
+    "site_id": "ID del sitio",
+    "executive": "Ejecutivo",
+    "latest_network_size": "Tamaño de la última red almacenada",
+    "latest_network_date": "Fecha de la última red almacenada",
+    "summary_active_users": "Total de usuarios activos",
+    "summary_executive_users": "Usuarios ejecutivos",
+    "summary_active_sites": "Total de sitios activos",
+    "summary_total_network_size": "Tamaño total de las redes de todos los sitios"
   },
   "job": {
     "results_load_failed": "No se pudieron cargar los resultados. Vuelva a cargar la página o contáctenos.",
@@ -293,5 +312,17 @@
       "cluster_match_25": "Clúster en el que el 25% de los nodos coincide con la búsqueda",
       "cluster_match_75": "Clúster en el que el 75% de los nodos coincide con la búsqueda"
     }
+  },
+  "mail": {
+    "new_user_request_subject": "Nuevo usuario en Seguro HIV-TRACE",
+    "new_user_request_intro": "Se ha añadido un nuevo usuario a Seguro HIV-TRACE.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "site": "Sitio",
+    "role": "Rol",
+    "added_by": "Añadido por",
+    "unknown": "desconocido",
+    "app_link": "Puede acceder a Seguro HIV-TRACE en",
+    "signoff": "Saludos cordiales,"
   }
 }

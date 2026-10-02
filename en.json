@@ -56,7 +56,9 @@
     "not_available": "N/A",
     "alt": {
       "logo": "Seguro HIV-TRACE logo"
-    }
+    },
+    "dev_edition": "Development edition",
+    "staging_edition": "Staging edition"
   },
   "submission": {
     "formatting_info": "Resources",
@@ -256,7 +258,24 @@
     "error_invalid_user": "Please check the user details and try again.",
     "error_user_not_found": "This user no longer exists. Reload the page and try again.",
     "error_save_failed": "The user could not be saved. Please try again.",
-    "invite_not_sent": "The user was added, but the invitation could not be prepared. Ask the user to reset their password to sign in."
+    "invite_not_sent": "The user was added, but the invitation could not be prepared. Ask the user to reset their password to sign in.",
+    "phone_number": "Phone number",
+    "job_title": "Job title",
+    "exports": "Exports",
+    "export_users": "Users (CSV)",
+    "export_sites": "Sites (CSV)",
+    "export_summary_csv": "Summary report (CSV)",
+    "export_summary_txt": "Summary report (TXT)",
+    "first_name": "First name",
+    "last_name": "Last name",
+    "site_id": "Site ID",
+    "executive": "Executive",
+    "latest_network_size": "Latest stored network size",
+    "latest_network_date": "Latest stored network date",
+    "summary_active_users": "Total Active Users",
+    "summary_executive_users": "Executive Users",
+    "summary_active_sites": "Total Active Sites",
+    "summary_total_network_size": "Total Network Size Across Sites"
   },
   "job": {
     "results_load_failed": "The results could not be loaded. Please reload the page or contact us.",
@@ -294,5 +313,17 @@
       "cluster_match_25": "Cluster where 25% of nodes match the search",
       "cluster_match_75": "Cluster where 75% of nodes match the search"
     }
+  },
+  "mail": {
+    "new_user_request_subject": "New user added to Secure HIV-TRACE",
+    "new_user_request_intro": "A new user has been added to Secure HIV-TRACE.",
+    "name": "Name",
+    "email": "E-mail",
+    "site": "Site",
+    "role": "Role",
+    "added_by": "Added by",
+    "unknown": "unknown",
+    "app_link": "Secure HIV-TRACE can be accessed at",
+    "signoff": "Kind Regards,"
   }
 }
