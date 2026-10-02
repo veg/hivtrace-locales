@@ -41,7 +41,22 @@
     "session_expired_title": "Session expired",
     "session_expired": "Your session has expired. Please sign in again.",
     "signout": "Sign Out",
-    "signout_confirm": "Sign out of HIV-TRACE?"
+    "signout_confirm": "Sign out of HIV-TRACE?",
+    "tooltip_go_to_network": "Open this network's results",
+    "tooltip_stand_alone_analysis": "Run a stand-alone analysis using this network's input data",
+    "tooltip_append_network": "Append new sequences to this network",
+    "tooltip_revert_to_this_network": "Restore this network as the latest. Deletes all newer networks.",
+    "network_date": "Reference date",
+    "uploaded_records": "Uploaded records",
+    "uploaded_persons": "Uploaded persons",
+    "analysed_sequences": "Analysed sequences",
+    "analysed_persons": "Persons with an analysed sequence",
+    "clustered_persons": "Persons in clusters",
+    "sequences_persons": "Sequences / Persons",
+    "not_available": "N/A",
+    "alt": {
+      "logo": "Seguro HIV-TRACE logo"
+    }
   },
   "submission": {
     "formatting_info": "Resources",
@@ -64,7 +79,10 @@
     "upload_failed": "The upload could not be processed. Please check the file and try again.",
     "upload_network_error": "The upload failed. Please check your connection and try again.",
     "upload_parse_failed": "The file could not be processed. Please check that it is a valid CSV file.",
-    "upload_not_allowed": "This file type is not accepted. Please upload the CSV file again."
+    "upload_not_allowed": "This file type is not accepted. Please upload the CSV file again.",
+    "network_date": "Reference date (optional)",
+    "network_date_desc": "If empty, a date in the file name (_YYYYMMDD) or today is used.",
+    "network_date_invalid": "The reference date is not valid. Use a date from 1990-01-01 to today, in the format YYYY-MM-DD."
   },
   "validation": {
     "parsing": "Parsing File",
@@ -249,6 +267,32 @@
     "cancelled": "Job was cancelled",
     "timed_out": "The analysis did not finish in the allowed time. Please submit the job again.",
     "status_delayed": "Status updates are delayed. Retrying...",
-    "error_prefix": "There was an error!"
+    "error_prefix": "There was an error!",
+    "records_without_sequence": "{{count}} record without sequence data",
+    "records_without_sequence_plural": "{{count}} records without sequence data",
+    "records_without_sequence_help": "These records are kept with the attributes but are not included in the network analysis, which uses sequences only."
+  },
+  "downloads": {
+    "tab": "Downloads",
+    "network_files": "Network files",
+    "input_files": "Input files",
+    "admin_files": "Administrator files",
+    "results_files": "Results files",
+    "nodes_csv": "Nodes CSV",
+    "unaligned_fasta": "Unaligned FASTA (input sequences)",
+    "results_json": "Results JSON",
+    "raw_input_csv": "Raw input CSV",
+    "not_available": "Not available",
+    "not_available_title": "This file was not produced for this network. Re-run the network to create it.",
+    "file_not_available": "This file is not available for this network."
+  },
+  "results": {
+    "alt": {
+      "cluster": "Cluster symbol: circle with a thick rim",
+      "node": "Node symbol: circle with a thin rim",
+      "matching_node": "Node that matches the search",
+      "cluster_match_25": "Cluster where 25% of nodes match the search",
+      "cluster_match_75": "Cluster where 75% of nodes match the search"
+    }
   }
 }

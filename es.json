@@ -40,7 +40,22 @@
     "session_expired_title": "Sesión expirada",
     "session_expired": "Su sesión ha expirado. Por favor, inicie sesión de nuevo.",
     "signout": "Cerrar sesión",
-    "signout_confirm": "¿Desea cerrar sesión en HIV-TRACE?"
+    "signout_confirm": "¿Desea cerrar sesión en HIV-TRACE?",
+    "tooltip_go_to_network": "Abrir los resultados de esta red",
+    "tooltip_stand_alone_analysis": "Ejecutar un análisis autónomo con los datos de entrada de esta red",
+    "tooltip_append_network": "Agregar nuevas secuencias a esta red",
+    "tooltip_revert_to_this_network": "Restaurar esta red como la más reciente. Se eliminan todas las redes más recientes.",
+    "network_date": "Fecha de referencia",
+    "uploaded_records": "Registros cargados",
+    "uploaded_persons": "Personas cargadas",
+    "analysed_sequences": "Secuencias analizadas",
+    "analysed_persons": "Personas con secuencia analizada",
+    "clustered_persons": "Personas en clústeres",
+    "sequences_persons": "Secuencias / Personas",
+    "not_available": "N/D",
+    "alt": {
+      "logo": "Logotipo de Seguro HIV-TRACE"
+    }
   },
   "submission": {
     "formatting_info": "Recursos informáticos",
@@ -63,7 +78,10 @@
     "upload_failed": "No se pudo procesar el archivo subido. Revise el archivo e inténtelo de nuevo.",
     "upload_network_error": "No se pudo subir el archivo. Revise su conexión e inténtelo de nuevo.",
     "upload_parse_failed": "No se pudo procesar el archivo. Verifique que sea un archivo CSV válido.",
-    "upload_not_allowed": "Este tipo de archivo no se acepta. Vuelva a subir el archivo CSV."
+    "upload_not_allowed": "Este tipo de archivo no se acepta. Vuelva a subir el archivo CSV.",
+    "network_date": "Fecha de referencia (opcional)",
+    "network_date_desc": "Si se deja vacía, se usa la fecha del nombre del archivo (_AAAAMMDD) o la fecha de hoy.",
+    "network_date_invalid": "La fecha de referencia no es válida. Use una fecha entre 1990-01-01 y hoy, con el formato AAAA-MM-DD."
   },
   "validation": {
     "parsing": "Analizando archivo",
@@ -248,6 +266,32 @@
     "cancelled": "El trabajo fue cancelado.",
     "timed_out": "El análisis no terminó en el tiempo permitido. Envíe el trabajo de nuevo.",
     "status_delayed": "Las actualizaciones de estado se están retrasando. Reintentando...",
-    "error_prefix": "¡Se produjo un error!"
+    "error_prefix": "¡Se produjo un error!",
+    "records_without_sequence": "{{count}} registro sin datos de secuencia",
+    "records_without_sequence_plural": "{{count}} registros sin datos de secuencia",
+    "records_without_sequence_help": "Estos registros se conservan con los atributos, pero no se incluyen en el análisis de la red, que usa solo secuencias."
+  },
+  "downloads": {
+    "tab": "Descargas",
+    "network_files": "Archivos de la red",
+    "input_files": "Archivos de entrada",
+    "admin_files": "Archivos de administrador",
+    "results_files": "Archivos de resultados",
+    "nodes_csv": "CSV de nodos",
+    "unaligned_fasta": "FASTA sin alinear (secuencias de entrada)",
+    "results_json": "JSON de resultados",
+    "raw_input_csv": "CSV de entrada original",
+    "not_available": "No disponible",
+    "not_available_title": "Este archivo no se generó para esta red. Vuelva a ejecutar la red para crearlo.",
+    "file_not_available": "Este archivo no está disponible para esta red."
+  },
+  "results": {
+    "alt": {
+      "cluster": "Símbolo de clúster: círculo con borde grueso",
+      "node": "Símbolo de nodo: círculo con borde delgado",
+      "matching_node": "Nodo que coincide con la búsqueda",
+      "cluster_match_25": "Clúster en el que el 25% de los nodos coincide con la búsqueda",
+      "cluster_match_75": "Clúster en el que el 75% de los nodos coincide con la búsqueda"
+    }
   }
 }
