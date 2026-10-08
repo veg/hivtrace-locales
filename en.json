@@ -84,7 +84,9 @@
     "upload_not_allowed": "This file type is not accepted. Please upload the CSV file again.",
     "network_date": "Reference date (optional)",
     "network_date_desc": "If empty, a date in the file name (_YYYYMMDD) or today is used.",
-    "network_date_invalid": "The reference date is not valid. Use a date from 1990-01-01 to today, in the format YYYY-MM-DD."
+    "network_date_invalid": "The reference date is not valid. Use a date from 1990-01-01 to today, in the format YYYY-MM-DD.",
+    "qc_and_hivtrace": "Run quality control before building the network",
+    "qc_and_hivtrace_desc": "Sequences that fail quality control are left out of the network. The quality control reports can be downloaded with the results."
   },
   "validation": {
     "parsing": "Parsing File",
@@ -111,7 +113,9 @@
     "annotating_network": "Annotating network",
     "exporting_csv": "Exporting CSV files",
     "public_distances": "Computing pairwise TN93 distances against a public database",
-    "public_network": "Inferring connections to sequences in a public database"
+    "public_network": "Inferring connections to sequences in a public database",
+    "quality_control": "Running quality control",
+    "qc_filter": "Removing sequences that did not pass quality control"
   },
   "general": {
     "network": "Network",
@@ -289,7 +293,12 @@
     "error_prefix": "There was an error!",
     "records_without_sequence": "{{count}} record without sequence data",
     "records_without_sequence_plural": "{{count}} records without sequence data",
-    "records_without_sequence_help": "These records are kept with the attributes but are not included in the network analysis, which uses sequences only."
+    "records_without_sequence_help": "These records are kept with the attributes but are not included in the network analysis, which uses sequences only.",
+    "qc_no_sequences": "No sequence passed quality control, so no network was built. The quality control reports show why.",
+    "qc_failed": "Quality control could not be completed. Please try again or contact us.",
+    "qc_inconsistent": "The quality control results did not match the uploaded file. Please check the file and submit it again.",
+    "qc_not_enabled": "Quality control with the network is not available on the compute server. Please contact us.",
+    "qc_reports_not_saved": "The quality control reports could not be saved. Please submit the job again."
   },
   "downloads": {
     "tab": "Downloads",
@@ -303,7 +312,12 @@
     "raw_input_csv": "Raw input CSV",
     "not_available": "Not available",
     "not_available_title": "This file was not produced for this network. Re-run the network to create it.",
-    "file_not_available": "This file is not available for this network."
+    "file_not_available": "This file is not available for this network.",
+    "qc_reports": "Quality control reports",
+    "qc_reports_zip": "All quality control reports (ZIP)",
+    "qc_full_report": "Full quality control report (CSV)",
+    "qc_network_csv": "Sequences included in the network (CSV)",
+    "qc_network_json": "Quality control summary (JSON)"
   },
   "results": {
     "alt": {

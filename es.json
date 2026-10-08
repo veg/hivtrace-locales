@@ -83,7 +83,9 @@
     "upload_not_allowed": "Este tipo de archivo no se acepta. Vuelva a subir el archivo CSV.",
     "network_date": "Fecha de referencia (opcional)",
     "network_date_desc": "Si se deja vacía, se usa la fecha del nombre del archivo (_AAAAMMDD) o la fecha de hoy.",
-    "network_date_invalid": "La fecha de referencia no es válida. Use una fecha entre 1990-01-01 y hoy, con el formato AAAA-MM-DD."
+    "network_date_invalid": "La fecha de referencia no es válida. Use una fecha entre 1990-01-01 y hoy, con el formato AAAA-MM-DD.",
+    "qc_and_hivtrace": "Ejecutar el control de calidad antes de construir la red",
+    "qc_and_hivtrace_desc": "Las secuencias que no pasan el control de calidad se excluyen de la red. Los informes del control de calidad se pueden descargar con los resultados."
   },
   "validation": {
     "parsing": "Analizando archivo",
@@ -110,7 +112,9 @@
     "annotating_network": "Anotando la red",
     "exporting_csv": "Exportando archivos CSV",
     "public_distances": "Calculando distancias TN93 contra una base de datos pública",
-    "public_network": "Infiriendo conexiones con secuencias de una base de datos pública"
+    "public_network": "Infiriendo conexiones con secuencias de una base de datos pública",
+    "quality_control": "Ejecutando el control de calidad",
+    "qc_filter": "Eliminando las secuencias que no pasaron el control de calidad"
   },
   "general": {
     "network": "Red",
@@ -288,7 +292,12 @@
     "error_prefix": "¡Se produjo un error!",
     "records_without_sequence": "{{count}} registro sin datos de secuencia",
     "records_without_sequence_plural": "{{count}} registros sin datos de secuencia",
-    "records_without_sequence_help": "Estos registros se conservan con los atributos, pero no se incluyen en el análisis de la red, que usa solo secuencias."
+    "records_without_sequence_help": "Estos registros se conservan con los atributos, pero no se incluyen en el análisis de la red, que usa solo secuencias.",
+    "qc_no_sequences": "Ninguna secuencia pasó el control de calidad, por lo que no se construyó la red. Los informes del control de calidad muestran el motivo.",
+    "qc_failed": "No se pudo completar el control de calidad. Inténtelo de nuevo o contáctenos.",
+    "qc_inconsistent": "Los resultados del control de calidad no coinciden con el archivo subido. Revise el archivo y envíelo de nuevo.",
+    "qc_not_enabled": "El control de calidad con la red no está disponible en el servidor de cómputo. Contáctenos.",
+    "qc_reports_not_saved": "No se pudieron guardar los informes del control de calidad. Envíe el trabajo de nuevo."
   },
   "downloads": {
     "tab": "Descargas",
@@ -302,7 +311,12 @@
     "raw_input_csv": "CSV de entrada original",
     "not_available": "No disponible",
     "not_available_title": "Este archivo no se generó para esta red. Vuelva a ejecutar la red para crearlo.",
-    "file_not_available": "Este archivo no está disponible para esta red."
+    "file_not_available": "Este archivo no está disponible para esta red.",
+    "qc_reports": "Informes del control de calidad",
+    "qc_reports_zip": "Todos los informes del control de calidad (ZIP)",
+    "qc_full_report": "Informe completo del control de calidad (CSV)",
+    "qc_network_csv": "Secuencias incluidas en la red (CSV)",
+    "qc_network_json": "Resumen del control de calidad (JSON)"
   },
   "results": {
     "alt": {
