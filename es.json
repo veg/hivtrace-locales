@@ -297,7 +297,8 @@
     "qc_failed": "No se pudo completar el control de calidad. Inténtelo de nuevo o contáctenos.",
     "qc_inconsistent": "Los resultados del control de calidad no coinciden con el archivo subido. Revise el archivo y envíelo de nuevo.",
     "qc_not_enabled": "El control de calidad con la red no está disponible en el servidor de cómputo. Contáctenos.",
-    "qc_reports_not_saved": "No se pudieron guardar los informes del control de calidad. Envíe el trabajo de nuevo."
+    "qc_reports_not_saved": "No se pudieron guardar los informes del control de calidad. Envíe el trabajo de nuevo.",
+    "results_not_retrieved": "No se pudieron recuperar los resultados de este trabajo. Envíe el trabajo de nuevo."
   },
   "downloads": {
     "tab": "Descargas",

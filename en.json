@@ -298,7 +298,8 @@
     "qc_failed": "Quality control could not be completed. Please try again or contact us.",
     "qc_inconsistent": "The quality control results did not match the uploaded file. Please check the file and submit it again.",
     "qc_not_enabled": "Quality control with the network is not available on the compute server. Please contact us.",
-    "qc_reports_not_saved": "The quality control reports could not be saved. Please submit the job again."
+    "qc_reports_not_saved": "The quality control reports could not be saved. Please submit the job again.",
+    "results_not_retrieved": "The results of this job could not be retrieved. Please submit the job again."
   },
   "downloads": {
     "tab": "Downloads",
