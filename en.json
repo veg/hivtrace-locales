@@ -299,7 +299,13 @@
     "qc_inconsistent": "The quality control results did not match the uploaded file. Please check the file and submit it again.",
     "qc_not_enabled": "Quality control with the network is not available on the compute server. Please contact us.",
     "qc_reports_not_saved": "The quality control reports could not be saved. Please submit the job again.",
-    "results_not_retrieved": "The results of this job could not be retrieved. Please submit the job again."
+    "results_not_retrieved": "The results of this job could not be retrieved. Please submit the job again.",
+    "cancel_button": "Cancel job",
+    "cancel_confirm": "Cancel this job? This cannot be undone.",
+    "cancel_done": "The job was cancelled.",
+    "cancel_already_finished": "The job had already finished.",
+    "cancel_results_sending": "The results are already on their way.",
+    "cancel_unavailable": "The job could not be cancelled right now. Please try again later."
   },
   "downloads": {
     "tab": "Downloads",

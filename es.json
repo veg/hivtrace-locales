@@ -298,7 +298,13 @@
     "qc_inconsistent": "Los resultados del control de calidad no coinciden con el archivo subido. Revise el archivo y envíelo de nuevo.",
     "qc_not_enabled": "El control de calidad con la red no está disponible en el servidor de cómputo. Contáctenos.",
     "qc_reports_not_saved": "No se pudieron guardar los informes del control de calidad. Envíe el trabajo de nuevo.",
-    "results_not_retrieved": "No se pudieron recuperar los resultados de este trabajo. Envíe el trabajo de nuevo."
+    "results_not_retrieved": "No se pudieron recuperar los resultados de este trabajo. Envíe el trabajo de nuevo.",
+    "cancel_button": "Cancelar trabajo",
+    "cancel_confirm": "¿Cancelar este trabajo? Esta acción no se puede deshacer.",
+    "cancel_done": "El trabajo fue cancelado.",
+    "cancel_already_finished": "El trabajo ya había terminado.",
+    "cancel_results_sending": "Los resultados ya están en camino.",
+    "cancel_unavailable": "No se pudo cancelar el trabajo en este momento. Inténtelo de nuevo más tarde."
   },
   "downloads": {
     "tab": "Descargas",
