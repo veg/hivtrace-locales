@@ -354,7 +354,15 @@
       "matching_node": "Nodo que coincide con la búsqueda",
       "cluster_match_25": "Clúster en el que el 25% de los nodos coincide con la búsqueda",
       "cluster_match_75": "Clúster en el que el 75% de los nodos coincide con la búsqueda"
-    }
+    },
+    "coi_tab": "Clústeres de interés",
+    "coi_heading": "Clústeres de interés",
+    "coi_create": "Crear un clúster de interés",
+    "coi_export": "Exportar la tabla a CSV",
+    "coi_read_only": "Los cambios que haga aquí en los clústeres de interés no se guardan.",
+    "coi_save_failed": "No se guardó un cambio en los clústeres de interés. Vuelva a cargar la página para ver lo que está guardado.",
+    "coi_unavailable_title": "No disponible para esta red",
+    "coi_unavailable_body": "Los clústeres de interés solo se guardan para las redes almacenadas en el servidor."
   },
   "mail": {
     "new_user_request_subject": "Nuevo usuario en Seguro HIV-TRACE",

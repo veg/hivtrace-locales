@@ -355,7 +355,15 @@
       "matching_node": "Node that matches the search",
       "cluster_match_25": "Cluster where 25% of nodes match the search",
       "cluster_match_75": "Cluster where 75% of nodes match the search"
-    }
+    },
+    "coi_tab": "Clusters of interest",
+    "coi_heading": "Clusters of interest",
+    "coi_create": "Create a cluster of interest",
+    "coi_export": "Export the table to CSV",
+    "coi_read_only": "Changes made here to clusters of interest are not saved.",
+    "coi_save_failed": "A change to the clusters of interest was not saved. Reload the page to see what is saved.",
+    "coi_unavailable_title": "Not available for this network",
+    "coi_unavailable_body": "Clusters of interest are kept only for networks stored on the server."
   },
   "mail": {
     "new_user_request_subject": "New user added to Secure HIV-TRACE",
