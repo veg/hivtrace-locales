@@ -401,5 +401,33 @@
     "civil status": "Civil status",
     "employment": "Employment",
     "amp pr-rt": "PR-RT amplification"
+  },
+  "dashboard": {
+    "title": "Usage dashboard",
+    "site_title": "Usage dashboard: {{site}}",
+    "menu_link": "Usage dashboard",
+    "invalid_range": "The date range is not valid; showing the last 12 months.",
+    "invalid_dates": "The date range is not valid.",
+    "from": "From",
+    "to": "To",
+    "apply": "Apply",
+    "export_csv": "Export (CSV)",
+    "uploads": "Network uploads",
+    "uploads_per_month": "Uploads per month",
+    "median_network_size": "Median network size (completed)",
+    "completed": "Completed",
+    "failed": "Failed",
+    "cancelled": "Cancelled",
+    "not_finished": "Not finished",
+    "month": "Month",
+    "by_month": "Uploads by month",
+    "by_site": "Uploads by site",
+    "no_data": "No uploads in this period.",
+    "latest_network_size": "Latest stored network size",
+    "latest_upload_date": "Upload date of the latest stored network",
+    "note_counts": "Every network job counts as an upload. Reverted, removed and purged jobs are not counted. Months follow the date in Mexico City.",
+    "note_status": "Not finished counts the jobs without a final status: running jobs, and older jobs that stopped before they finished.",
+    "note_per_month": "Uploads per month divides by every month the range touches, partial first and last months included.",
+    "note_size": "Network size is the number of uploaded rows; size figures use completed jobs only."
   }
 }

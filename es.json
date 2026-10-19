@@ -400,5 +400,33 @@
     "civil status": "Estado civil",
     "employment": "Empleo",
     "amp pr-rt": "Amplificación PR-RT"
+  },
+  "dashboard": {
+    "title": "Panel de uso",
+    "site_title": "Panel de uso: {{site}}",
+    "menu_link": "Panel de uso",
+    "invalid_range": "El rango de fechas no es válido; se muestran los últimos 12 meses.",
+    "invalid_dates": "El rango de fechas no es válido.",
+    "from": "Desde",
+    "to": "Hasta",
+    "apply": "Aplicar",
+    "export_csv": "Exportar (CSV)",
+    "uploads": "Redes cargadas",
+    "uploads_per_month": "Cargas por mes",
+    "median_network_size": "Tamaño mediano de la red (completadas)",
+    "completed": "Completadas",
+    "failed": "Fallidas",
+    "cancelled": "Canceladas",
+    "not_finished": "Sin terminar",
+    "month": "Mes",
+    "by_month": "Cargas por mes",
+    "by_site": "Cargas por sitio",
+    "no_data": "No hay cargas en este periodo.",
+    "latest_network_size": "Tamaño de la última red guardada",
+    "latest_upload_date": "Fecha de carga de la última red guardada",
+    "note_counts": "Cada trabajo de red cuenta como una carga. No se cuentan los trabajos revertidos, eliminados o purgados. Los meses siguen la fecha de la Ciudad de México.",
+    "note_status": "Sin terminar cuenta los trabajos sin un estado final: los trabajos en curso y los trabajos antiguos que se detuvieron antes de terminar.",
+    "note_per_month": "Cargas por mes divide entre todos los meses que abarca el rango, incluidos el primer y el último mes parciales.",
+    "note_size": "El tamaño de la red es el número de filas cargadas; las cifras de tamaño usan solo trabajos completados."
   }
 }
