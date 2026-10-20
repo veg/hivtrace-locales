@@ -59,7 +59,9 @@
       "logo": "Seguro HIV-TRACE logo"
     },
     "dev_edition": "Development edition",
-    "staging_edition": "Staging edition"
+    "staging_edition": "Staging edition",
+    "person_clusters": "Clusters (persons)",
+    "person_level_note": "Counts are per person: several sequences of one person count once."
   },
   "submission": {
     "formatting_info": "Resources",
@@ -367,7 +369,9 @@
     "coi_read_only_old": "This is not the newest network of the site. Clusters of interest can be changed only from the newest network; changes made here are not saved.",
     "coi_save_failed": "A change to the clusters of interest was not saved. Reload the page to see what is saved.",
     "coi_unavailable_title": "Not available for this network",
-    "coi_unavailable_body": "Clusters of interest are kept only for networks stored on the server."
+    "coi_unavailable_body": "Clusters of interest are kept only for networks stored on the server.",
+    "persons_multiple_sequences": "Persons with >1 sequence",
+    "persons_multiple_clusters": "Persons in multiple clusters"
   },
   "mail": {
     "new_user_request_subject": "New user added to Secure HIV-TRACE",

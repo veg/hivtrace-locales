@@ -58,7 +58,9 @@
       "logo": "Logotipo de Seguro HIV-TRACE"
     },
     "dev_edition": "Edición de desarrollo",
-    "staging_edition": "Edición de pruebas"
+    "staging_edition": "Edición de pruebas",
+    "person_clusters": "Clústeres (personas)",
+    "person_level_note": "Los conteos son por persona: varias secuencias de una misma persona cuentan una sola vez."
   },
   "submission": {
     "formatting_info": "Recursos informáticos",
@@ -366,7 +368,9 @@
     "coi_read_only_old": "Esta no es la red más reciente del sitio. Los clústeres de interés solo se pueden cambiar desde la red más reciente; los cambios que haga aquí no se guardan.",
     "coi_save_failed": "No se guardó un cambio en los clústeres de interés. Vuelva a cargar la página para ver lo que está guardado.",
     "coi_unavailable_title": "No disponible para esta red",
-    "coi_unavailable_body": "Los clústeres de interés solo se guardan para las redes almacenadas en el servidor."
+    "coi_unavailable_body": "Los clústeres de interés solo se guardan para las redes almacenadas en el servidor.",
+    "persons_multiple_sequences": "Personas con >1 secuencia",
+    "persons_multiple_clusters": "Personas en varios clústeres"
   },
   "mail": {
     "new_user_request_subject": "Nuevo usuario en Seguro HIV-TRACE",
