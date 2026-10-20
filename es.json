@@ -326,7 +326,9 @@
     "cancel_done": "El trabajo fue cancelado.",
     "cancel_already_finished": "El trabajo ya había terminado.",
     "cancel_results_sending": "Los resultados ya están en camino.",
-    "cancel_unavailable": "No se pudo cancelar el trabajo en este momento. Inténtelo de nuevo más tarde."
+    "cancel_unavailable": "No se pudo cancelar el trabajo en este momento. Inténtelo de nuevo más tarde.",
+    "injected_nodes": "Personas sin secuencia mostradas como nodos sin clúster: {{n}}.",
+    "records_without_sequence_injected_help": "Los registros sin secuencia no pueden vincularse: aparecen en la tabla de nodos sin clúster y no se cuentan en ningún clúster."
   },
   "downloads": {
     "tab": "Descargas",
@@ -407,7 +409,15 @@
     "municipality": "Municipio",
     "civil status": "Estado civil",
     "employment": "Empleo",
-    "amp pr-rt": "Amplificación PR-RT"
+    "amp pr-rt": "Amplificación PR-RT",
+    "has_sequence": "Tiene secuencia",
+    "sequence_status": "Estado de la secuencia"
+  },
+  "attribute_values": {
+    "sequence_status": {
+      "with_sequence": "Con secuencia",
+      "without_sequence": "Sin secuencia"
+    }
   },
   "dashboard": {
     "title": "Panel de uso",

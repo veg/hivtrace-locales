@@ -327,7 +327,9 @@
     "cancel_done": "The job was cancelled.",
     "cancel_already_finished": "The job had already finished.",
     "cancel_results_sending": "The results are already on their way.",
-    "cancel_unavailable": "The job could not be cancelled right now. Please try again later."
+    "cancel_unavailable": "The job could not be cancelled right now. Please try again later.",
+    "injected_nodes": "Persons without a sequence shown as nodes without a cluster: {{n}}.",
+    "records_without_sequence_injected_help": "Records without a sequence cannot be linked: they are listed in the nodes table without a cluster and are not counted in any cluster."
   },
   "downloads": {
     "tab": "Downloads",
@@ -408,7 +410,15 @@
     "municipality": "Municipality",
     "civil status": "Civil status",
     "employment": "Employment",
-    "amp pr-rt": "PR-RT amplification"
+    "amp pr-rt": "PR-RT amplification",
+    "has_sequence": "Has sequence",
+    "sequence_status": "Sequence status"
+  },
+  "attribute_values": {
+    "sequence_status": {
+      "with_sequence": "With sequence",
+      "without_sequence": "Without sequence"
+    }
   },
   "dashboard": {
     "title": "Usage dashboard",
