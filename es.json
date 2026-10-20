@@ -45,6 +45,7 @@
     "tooltip_stand_alone_analysis": "Ejecutar un análisis autónomo con los datos de entrada de esta red",
     "tooltip_append_network": "Agregar nuevas secuencias a esta red",
     "tooltip_revert_to_this_network": "Restaurar esta red como la más reciente. Se eliminan todas las redes más recientes.",
+    "revert_coi_caution": "Los clústeres de interés no se revierten: los cambios que se les hicieron en las redes eliminadas se conservan, y se pueden volver a cambiar desde la red a la que revierte.",
     "network_date": "Fecha de referencia",
     "uploaded_records": "Registros cargados",
     "uploaded_persons": "Personas cargadas",
@@ -362,6 +363,7 @@
     "coi_create": "Crear un clúster de interés",
     "coi_export": "Exportar la tabla a CSV",
     "coi_read_only": "Los cambios que haga aquí en los clústeres de interés no se guardan.",
+    "coi_read_only_old": "Esta no es la red más reciente del sitio. Los clústeres de interés solo se pueden cambiar desde la red más reciente; los cambios que haga aquí no se guardan.",
     "coi_save_failed": "No se guardó un cambio en los clústeres de interés. Vuelva a cargar la página para ver lo que está guardado.",
     "coi_unavailable_title": "No disponible para esta red",
     "coi_unavailable_body": "Los clústeres de interés solo se guardan para las redes almacenadas en el servidor."

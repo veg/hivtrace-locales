@@ -46,6 +46,7 @@
     "tooltip_stand_alone_analysis": "Run a stand-alone analysis using this network's input data",
     "tooltip_append_network": "Append new sequences to this network",
     "tooltip_revert_to_this_network": "Restore this network as the latest. Deletes all newer networks.",
+    "revert_coi_caution": "Clusters of interest are not reverted: changes made to them on the deleted networks are kept, and they can be changed again from the network you revert to.",
     "network_date": "Reference date",
     "uploaded_records": "Uploaded records",
     "uploaded_persons": "Uploaded persons",
@@ -363,6 +364,7 @@
     "coi_create": "Create a cluster of interest",
     "coi_export": "Export the table to CSV",
     "coi_read_only": "Changes made here to clusters of interest are not saved.",
+    "coi_read_only_old": "This is not the newest network of the site. Clusters of interest can be changed only from the newest network; changes made here are not saved.",
     "coi_save_failed": "A change to the clusters of interest was not saved. Reload the page to see what is saved.",
     "coi_unavailable_title": "Not available for this network",
     "coi_unavailable_body": "Clusters of interest are kept only for networks stored on the server."
