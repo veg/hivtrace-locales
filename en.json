@@ -782,6 +782,9 @@
     "membership_indirect_plural": "{{count}} nodes are indirectly linked @ {{pct}}",
     "membership_suffix": " to cluster of interest <code>{{name}}</code>",
     "add_cluster_to_coi": "Add this cluster to the cluster of interest",
-    "merge_col_coi_help": "Cluster of interest name"
+    "merge_col_coi_help": "Cluster of interest name",
+    "migrated_tag": " Migrated to multiple sequences per person cluster",
+    "migrated_used": "; used the following sequences ",
+    "migrated_ignored": "; ignored the following sequences "
   }
 }

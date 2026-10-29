@@ -781,6 +781,9 @@
     "membership_indirect_plural": "{{count}} nodos están vinculados indirectamente al {{pct}}",
     "membership_suffix": " (clúster de interés <code>{{name}}</code>)",
     "add_cluster_to_coi": "Agregar este clúster al clúster de interés",
-    "merge_col_coi_help": "Nombre del clúster de interés"
+    "merge_col_coi_help": "Nombre del clúster de interés",
+    "migrated_tag": " Migrado a clúster de múltiples secuencias por persona",
+    "migrated_used": "; usó las siguientes secuencias ",
+    "migrated_ignored": "; ignoró las siguientes secuencias "
   }
 }
