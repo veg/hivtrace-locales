@@ -172,7 +172,13 @@
     "cluster_display_info": "Mostrar sólo clústeres con nodos añadidos en los últimos 12 meses [vaya al menú Clústeres para cambiar esta opción].",
     "search_help": "Teclee un término para seleccionar las columnas que <em>contienen dicho término</em>. <br /> p. ej., al escribir <code>Mujer</code> se seleccionarán filas que incluyan el valor 'Mujer'. <p /> Escriba términos separados por espacios (<code>Mujer UDI</code>) para buscar <b>uno u otro</b>. <p/> Escriba entre comillas (<code>'Mujer'</code>) para buscar el término <b>exacto</b>.<p/> Si las columnas contienen fechas, puede usar <code> AAAAMMDD:AAAAMMDD</code> para buscar intervalos de fechas.<p/> Utilice <code>&lt;value</code> o <code>&gt;value</code> para buscar columnas numéricas<p/>",
     "categorical": "Categórica",
-    "continuous": "Continua"
+    "continuous": "Continua",
+    "update_attribute": "Cambios en las secuencias respecto a la red anterior",
+    "update_existing": "Existente",
+    "update_new": "Nueva",
+    "update_moved": "Cambió de clúster",
+    "note_removed_prior_nodes": "Se eliminó {{count}} nodo de la red anterior",
+    "note_removed_prior_nodes_plural": "Se eliminaron {{count}} nodos de la red anterior"
   },
   "clusters_main": {
     "search_text_in_attributes": "Buscar Texto en Atributos",
