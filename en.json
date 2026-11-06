@@ -61,11 +61,12 @@
     "dev_edition": "Development edition",
     "staging_edition": "Staging edition",
     "person_clusters": "Clusters (persons)",
-    "person_level_note": "Counts are per person: several sequences of one person count once."
+    "person_level_note": "Counts are per person: several sequences of one person count once.",
+    "size_note": "Size counts the rows of the uploaded file, blank rows included. Uploaded records on the results page count only rows with data."
   },
   "submission": {
     "formatting_info": "Resources",
-    "select": "Select Sequence File",
+    "select": "Select File",
     "use_defaults": "Use Defaults",
     "distance_threshold": "Distance Threshold",
     "distance_threshold_desc": "Two sequences will be connected with a putative link (subject to filtering, see below), if and only if their pairwise distance does not exceed this threshold.",
@@ -89,7 +90,12 @@
     "network_date_desc": "If empty, a date in the file name (_YYYYMMDD) or today is used.",
     "network_date_invalid": "The reference date is not valid. Use a date from 1990-01-01 to today, in the format YYYY-MM-DD.",
     "qc_and_hivtrace": "Run quality control before building the network",
-    "qc_and_hivtrace_desc": "Sequences that fail quality control are left out of the network. The quality control reports can be downloaded with the results."
+    "qc_and_hivtrace_desc": "Sequences that fail quality control are left out of the network. The quality control reports can be downloaded with the results.",
+    "review_parameters": "Please review the form parameters",
+    "review_parameters_desc": "Some parameters are not acceptable.",
+    "required": "This field is required.",
+    "no_file_selected": "No file selected",
+    "file_hint": "Accepted format: CSV file (.csv)."
   },
   "validation": {
     "parsing": "Parsing File",
@@ -407,8 +413,8 @@
     "variable_options": "Variable Options",
     "variable": "Variable",
     "add_variable": "Add variable",
-    "label" : "Label",
-    "type" :"Type",
+    "label": "Label",
+    "type": "Type",
     "password_mismatch": "Passwords didn't match",
     "password_policy": "Invalid Password : At least one (1) character from 3 of the four (4) character categories (A-Z, a-z, 0-9, special characters), and minimum length of eight (8) characters for regular user passwords.",
     "error_duplicate_email": "A user with this e-mail address already exists.",
@@ -599,7 +605,7 @@
     "no_data": "No uploads in this period.",
     "latest_network_size": "Latest stored network size",
     "latest_upload_date": "Upload date of the latest stored network",
-    "note_counts": "Every network job counts as an upload. Reverted, removed and purged jobs are not counted. Months follow the date in Mexico City.",
+    "note_counts": "Every network job counts as an upload, whether or not its network was stored; the Previous Networks list shows only completed, stored networks. Reverted, removed and purged jobs are not counted. Months follow the date in Mexico City.",
     "note_status": "Not finished counts the jobs without a final status: running jobs, and older jobs that stopped before they finished.",
     "note_per_month": "Uploads per month divides by every month the range touches, partial first and last months included.",
     "note_size": "Network size is the number of uploaded rows; size figures use completed jobs only."
