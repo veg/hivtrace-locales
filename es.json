@@ -61,16 +61,22 @@
     "staging_edition": "Edición de pruebas",
     "person_clusters": "Clústeres (personas)",
     "person_level_note": "Los conteos son por persona: varias secuencias de una misma persona cuentan una sola vez.",
-    "size_note": "El tamaño cuenta las filas del archivo cargado, incluidas las filas en blanco. Los registros cargados de la página de resultados cuentan solo las filas con datos."
+    "size_note": "El tamaño cuenta las filas del archivo cargado, incluidas las filas en blanco. Los registros cargados de la página de resultados cuentan solo las filas con datos.",
+    "sequence_homology_screening": "Tamizaje de homología de secuencias",
+    "conduct_sequence_homology_screening": "Realizar un nuevo tamizaje de homología de secuencias",
+    "previous_runs": "Corridas previas",
+    "go_to": "Ir a",
+    "no_prior_screenings": "No se han realizado tamizajes previos de control de calidad.",
+    "revert_caution_msg": "¿Está seguro de que quiere continuar? Se eliminarán todas las corridas guardadas después del {{created}}."
   },
   "submission": {
     "formatting_info": "Recursos informáticos",
     "select": "Seleccionar archivo",
     "use_defaults": "Usar valores predeterminados",
     "distance_threshold": "Umbral de distancia",
-    "distance_threshold_desc": "Dos secuencias estarán conectadas con un enlace putativo (sujeto a filtrado, ver más abajo), sólo si la distancia entre pares no supera este umbral.",
+    "distance_threshold_desc": "Dos secuencias estarán conectadas con un enlace putativo (sujeto a filtrado, ver más abajo), solo si la distancia entre pares no supera este umbral.",
     "minimum_overlap": "Traslape mínimo",
-    "minimum_overlap_desc": "Sólo se incluirán en los cálculos de distancia las secuencias que se superpongan al menos en este número de caracteres no vacíos. Asegúrese de ajustar este valor en función de la longitud de las secuencias introducidas. El objetivo debe ser tener al menos 2/(umbral de distancia) caracteres alineados.",
+    "minimum_overlap_desc": "Solo se incluirán en los cálculos de distancia las secuencias que se superpongan al menos en este número de caracteres no vacíos. Asegúrese de ajustar este valor en función de la longitud de las secuencias introducidas. El objetivo debe ser tener al menos 2/(umbral de distancia) caracteres alineados.",
     "handle_ambiguities": "Resolver ambigüedades",
     "handle_ambiguities_desc": "<dl><dt>Resolver</dt><dd>Cuenta las resoluciones que se ajustan como una coincidencia perfecta</dd><dt>Promediar</dt><dd>Promedia todas las posibles resoluciones</dd></dl>",
     "ambiguity_fraction": "Fracción de ambigüedad",
@@ -78,7 +84,7 @@
     "remove_drams_desc": "Gestionar los análisis de proteínas (VIH-1 pr y/o RT) que incluyen posiciones asociadas a resistencia a fármacos.",
     "resolve": "Resolver",
     "average": "Promediar",
-    "warning": "Advertencia: Parámetro especificado inválido! El parámetro sólo acepta valores dentro del intervalo",
+    "warning": "Advertencia: Parámetro especificado inválido! El parámetro solo acepta valores dentro del intervalo",
     "no_file_provided": "Advertencia : No se ha proporcionado ningún archivo.",
     "notice": "Aviso : El parámetro especificado es válido, pero diferente del recomendado por defecto",
     "upload_failed": "No se pudo procesar el archivo subido. Revise el archivo e inténtelo de nuevo.",
@@ -94,7 +100,18 @@
     "review_parameters_desc": "Algunos parámetros no son aceptables.",
     "required": "Este campo es obligatorio.",
     "no_file_selected": "Ningún archivo seleccionado",
-    "file_hint": "Formato aceptado: archivo CSV (.csv)."
+    "file_hint": "Formato aceptado: archivo CSV (.csv).",
+    "using_file_from_analysis": "Usando el archivo del análisis {{id}}",
+    "dram_wheeler": "Lista de vigilancia de los CDC",
+    "ambiguity_fraction_title": "Manejo de secuencias con muchas ambigüedades",
+    "ambiguity_fraction_desc": "<p class='text-danger'>Afecta <em>solo</em> a la opción <b>Resolver</b> para el manejo de ambigüedades</p>A toda secuencia cuya proporción de ambigüedades no sea mayor que la seleccionada [{{min}} - {{max}}] se le resolverán las ambigüedades (si es posible); en las secuencias con fracciones mayores, las ambigüedades se promediarán. Esto reduce los vínculos espurios debidos a secuencias con muchas ambigüedades.",
+    "ambiguity_fraction_note": "Este ajuste solo se aplica cuando el manejo de ambigüedades está en Resolver.",
+    "whole_number": "Ingrese un número entero.",
+    "min_overlap_invalid": "El traslape mínimo debe ser un número entero de 50 a 5000.",
+    "cumulative_note": "Suba el conjunto de datos completo y acumulado: todos los registros de cargas anteriores más los nuevos, no solo los nuevos.",
+    "file_columns_hint": "El archivo necesita una fila de encabezado con las columnas {{uid}} y {{sequence}}, o {{uid_alt}} y {{sequence_alt}}.",
+    "parameters_used": "Parámetros utilizados: umbral de distancia {{distance_threshold}}, traslape mínimo {{min_overlap}}, resolver ambigüedades: {{ambiguity_handling}} (fracción {{ambiguity_fraction}}), remover DRAMS: {{strip_drams}}.",
+    "identical_file": "Este archivo es idéntico al del último análisis completado. Subirlo de nuevo repetirá ese análisis."
   },
   "validation": {
     "parsing": "Analizando archivo",
@@ -161,7 +178,10 @@
     "save": "Guardar",
     "dismiss": "Descartar",
     "export_to_json": "Exportar como JSON",
-    "unnamed": "sin nombre"
+    "unnamed": "sin nombre",
+    "sort_by": "Ordenar por {{name}}",
+    "help": "Ayuda",
+    "help_about": "Ayuda: {{topic}}"
   },
   "network_tab": {
     "color": "Color",
@@ -179,12 +199,12 @@
     "hide_labels_for_all": "Ocultar etiquetas de los nodos",
     "highlight_unsupported_edges": "Resaltar enlaces sin soporte",
     "show_epidemiological_growth": "Mostrar crecimiento",
-    "only_recent_clusters": "Mostrar solo clústeres con cambio en los últimos 12 meses",
+    "only_recent_clusters": "Mostrar solo clústeres con casos con fecha en los últimos 12 meses",
     "show_removed_edges": "Mostrar enlaces removidos",
     "min_cluster_size": "Tamaño mínimo de clúster",
-    "toggle_epicurve": "Activar/Desactivar Epicurve",
-    "text_in_attributes": "Texto_atributos",
-    "cluster_display_info": "Mostrar sólo clústeres con nodos añadidos en los últimos 12 meses [vaya al menú Clústeres para cambiar esta opción].",
+    "toggle_epicurve": "Mostrar u ocultar la curva epidémica (casos por trimestre)",
+    "text_in_attributes": "Texto en atributos",
+    "cluster_display_info": "Mostrar solo clústeres con casos con fecha en los últimos 12 meses [vaya al menú Clústeres para cambiar esta opción].",
     "search_help": "Teclee un término para seleccionar las columnas que <em>contienen dicho término</em>. <br /> p. ej., al escribir <code>Mujer</code> se seleccionarán filas que incluyan el valor 'Mujer'. <p /> Escriba términos separados por espacios (<code>Mujer UDI</code>) para buscar <b>uno u otro</b>. <p/> Escriba entre comillas (<code>'Mujer'</code>) para buscar el término <b>exacto</b>.<p/> Si las columnas contienen fechas, puede usar <code> AAAAMMDD:AAAAMMDD</code> para buscar intervalos de fechas.<p/> Utilice <code>&lt;value</code> o <code>&gt;value</code> para buscar columnas numéricas<p/>",
     "categorical": "Categórica",
     "continuous": "Continua",
@@ -287,7 +307,11 @@
     "social_nodes": "{{count}} nodo {{annotation}}. ",
     "social_nodes_plural": "{{count}} nodos {{annotation}}. ",
     "social_bridges": "Conecta con {{count}} clúster",
-    "social_bridges_plural": "Conecta con {{count}} clústeres"
+    "social_bridges_plural": "Conecta con {{count}} clústeres",
+    "empty_filtered": "No se muestra ningún clúster: los filtros actuales ocultan el clúster.",
+    "empty_filtered_plural": "No se muestra ningún clúster: los filtros actuales ocultan los {{count}} clústeres.",
+    "show_all_clusters": "Mostrar todos los clústeres",
+    "epicurve_no_dates": "Ningún caso tiene fecha para graficar."
   },
   "clusters_main": {
     "search_text_in_attributes": "Buscar Texto en Atributos",
@@ -300,7 +324,9 @@
     "export_colors": "Copiar esquema de color",
     "collapse_cluster": "Colapsar clúster",
     "reset_layout": "Restablecer visualización",
-    "category_limit": "Límite Categoría"
+    "category_limit": "Límite Categoría",
+    "reset_layout_packed": "Restablecer visualización (compacta)",
+    "reset_layout_tiled": "Restablecer visualización (en mosaico)"
   },
   "statistics": {
     "network_statistics": "Estadísticas de la Red",
@@ -337,7 +363,7 @@
     "scaled_number_of_genotypes_in_past_2_months": "No. escalado genotipos añadidos últimos 2 meses",
     "group_by_attribute": "Agrupar por atributo",
     "group_by_id": "Agrupar por ID",
-    "listing_nodes": "Lista de nodos",
+    "listing_nodes": "Lista de nodos en el",
     "missing": "Faltantes",
     "diff_moved": "{{count}} movido",
     "diff_moved_plural": "{{count}} movidos",
@@ -362,7 +388,8 @@
     "cases_dx_36": "Casos diagnosticados en 36 meses",
     "cases_dx_36_help": "Número de casos diagnosticados en los últimos 36 meses conectados solo a través de casos diagnosticados en los últimos 36 meses",
     "cases_dx_12": "Casos diagnosticados en 12 meses",
-    "cases_dx_12_help": "Número de casos diagnosticados en los últimos 12 meses conectados solo a través de casos diagnosticados en los últimos 36 meses"
+    "cases_dx_12_help": "Número de casos diagnosticados en los últimos 12 meses conectados solo a través de casos diagnosticados en los últimos 36 meses",
+    "actions": "Acciones"
   },
   "nodes_tab": {
     "clustered_invidiuals": "Individuos en clúster",
@@ -381,12 +408,18 @@
     "node_degree": "Grado del nodo",
     "not_defined": "No definido",
     "truncated": "Tabla truncada por el gran número de filas ({{count}})",
-    "filter_help": "Escriba un término para seleccionar las filas cuyas columnas <em>contienen dicho término</em>. <br /> Por ejemplo, al escribir <code>MSM</code> se seleccionan las filas que tienen \"MSM\" como parte del valor de la columna. <p /> Escriba términos separados por espacios (<code>MSM IDU</code>) para buscar <b>cualquiera</b> de ellos. <p/> Escriba términos entre comillas dobles (<code>\"male\"</code>) para buscar ese término <b>exacto</b>.<p/> Si las columnas contienen fechas, puede usar <code>YYYYMMDD:YYYYMMDD</code> para buscar intervalos de fechas.<p/> Use <code>&lt;valor</code> o <code>&gt;valor</code> para buscar en columnas numéricas<p/>"
+    "filter_help": "Escriba un término para seleccionar las filas cuyas columnas <em>contienen dicho término</em>. <br /> Por ejemplo, al escribir <code>MSM</code> se seleccionan las filas que tienen \"MSM\" como parte del valor de la columna. <p /> Escriba términos separados por espacios (<code>MSM IDU</code>) para buscar <b>cualquiera</b> de ellos. <p/> Escriba términos entre comillas dobles (<code>\"male\"</code>) para buscar ese término <b>exacto</b>.<p/> Si las columnas contienen fechas, puede usar <code>YYYYMMDD:YYYYMMDD</code> para buscar intervalos de fechas.<p/> Use <code>&lt;valor</code> o <code>&gt;valor</code> para buscar en columnas numéricas<p/>",
+    "filter_reset": "Borrar filtro",
+    "filter_apply": "Aplicar filtro",
+    "export_to_tsv": "Exportar a TSV"
   },
   "attributes_tab": {
     "show_as": "Mostrar en %",
     "show_help": "Esta tabla muestra cuántas conexiones existen entre cada par de valores del atributo. Por ejemplo, si un enlace conecta un nodo 'Masculino' con uno 'Femenino', este enlace contribuye con un recuento de 1 a ambas celdas 'Masculino/Femenino' y 'Femenino/Masculino' de la tabla. Un enlace que conecte un nodo 'Masculino' con otro 'Masculino' contribuirá con 2 recuentos a la celda Masculino/Masculino.",
-    "chord_diagram_help": "Este panel mostrará un <a href = 'https://es.wikipedia.org/wiki/Diagrama_de_cuerdas'><b>diagrama de cuerdas</b></a> (para valores categóricos) o un <b>diagrama de dispersión</b> (para valores continuos). Son útiles para mostrar la conexión de atributos de los nodos entre enlaces. Coloca el mouse sobre un color para visualizar a qué atributo corresponde en el <b>diagramas de cuerdas</b>. Coloca el mouse sobre un punto en particular para visualizar a qué enlace corresponde en el <b>histograma</b>. <p/> Para comprender mejor un <b>diagrama de cuerdas</b>, considere una red con 100 enlaces: 40 de estos conectan hombres con hombres; 10 conectan mujeres con mujeres y 50, hombres con mujeres. A los hombres se les asignará (40 x 2 + 50) / 200 = 0,65 de la circunferencia total (tamaño de la porción del pastel). Al ponderar la conexión entre hombres y mujeres (enfocado a los hombres), esta recibirá 50 / (50+40) = 5/9 del peso, mientras que la conexión entre mujeres y hombres (enfocado a los mujeres) recibirá 50 / (50+10) = 5/6 del peso."
+    "chord_diagram_help": "Este panel mostrará un <a href = 'https://es.wikipedia.org/wiki/Diagrama_de_cuerdas'><b>diagrama de cuerdas</b></a> (para valores categóricos) o un <b>diagrama de dispersión</b> (para valores continuos). Son útiles para mostrar la conexión de atributos de los nodos entre enlaces. Coloca el mouse sobre un color para visualizar a qué atributo corresponde en el <b>diagramas de cuerdas</b>. Coloca el mouse sobre un punto en particular para visualizar a qué enlace corresponde en el <b>histograma</b>. <p/> Para comprender mejor un <b>diagrama de cuerdas</b>, considere una red con 100 enlaces: 40 de estos conectan hombres con hombres; 10 conectan mujeres con mujeres y 50, hombres con mujeres. A los hombres se les asignará (40 x 2 + 50) / 200 = 0,65 de la circunferencia total (tamaño de la porción del pastel). Al ponderar la conexión entre hombres y mujeres (enfocado a los hombres), esta recibirá 50 / (50+40) = 5/9 del peso, mientras que la conexión entre mujeres y hombres (enfocado a los mujeres) recibirá 50 / (50+10) = 5/6 del peso.",
+    "patient_attributes": "Atributos del paciente",
+    "attribute_name": "Nombre",
+    "attribute_value": "Valor"
   },
   "admin": {
     "manage_users": "Admin. usuarios",
@@ -471,8 +504,8 @@
     "timed_out": "El análisis no terminó en el tiempo permitido. Envíe el trabajo de nuevo.",
     "status_delayed": "Las actualizaciones de estado se están retrasando. Reintentando...",
     "error_prefix": "¡Se produjo un error!",
-    "records_without_sequence": "{{count}} registro sin datos de secuencia",
-    "records_without_sequence_plural": "{{count}} registros sin datos de secuencia",
+    "records_without_sequence": "{{count}} registro sin secuencia",
+    "records_without_sequence_plural": "{{count}} registros sin secuencia",
     "records_without_sequence_help": "Estos registros se conservan con los atributos, pero no se incluyen en el análisis de la red, que usa solo secuencias.",
     "qc_no_sequences": "Ninguna secuencia pasó el control de calidad, por lo que no se construyó la red. Los informes del control de calidad muestran el motivo.",
     "qc_failed": "No se pudo completar el control de calidad. Inténtelo de nuevo o contáctenos.",
@@ -526,7 +559,14 @@
     "coi_unavailable_title": "No disponible para esta red",
     "coi_unavailable_body": "Los clústeres de interés solo se guardan para las redes almacenadas en el servidor.",
     "persons_multiple_sequences": "Personas con >1 secuencia",
-    "persons_multiple_clusters": "Personas en varios clústeres"
+    "persons_multiple_clusters": "Personas en varios clústeres",
+    "load_social_network": "Cargar red social (.CSV)",
+    "select_color_palette": "Seleccionar paleta de colores",
+    "invert": "Invertir",
+    "matching_node": "Nodo coincidente",
+    "loading_network": "Cargando la red",
+    "load_external_network": "Cargar información de red externa",
+    "attributes_hint": "Elija un atributo categórico para ver cómo se vinculan sus valores entre sí en la red."
   },
   "mail": {
     "new_user_request_subject": "Nuevo usuario en Seguro HIV-TRACE",
@@ -592,7 +632,7 @@
     "apply": "Aplicar",
     "export_csv": "Exportar (CSV)",
     "uploads": "Redes cargadas",
-    "uploads_per_month": "Cargas por mes",
+    "uploads_per_month": "Promedio de cargas por mes",
     "median_network_size": "Tamaño mediano de la red (completadas)",
     "completed": "Completadas",
     "failed": "Fallidas",
@@ -606,7 +646,7 @@
     "latest_upload_date": "Fecha de carga de la última red guardada",
     "note_counts": "Cada trabajo de red cuenta como una carga, se haya guardado o no su red; la lista de Redes Previas solo muestra las redes completadas y guardadas. No se cuentan los trabajos revertidos, eliminados o purgados. Los meses siguen la fecha de la Ciudad de México.",
     "note_status": "Sin terminar cuenta los trabajos sin un estado final: los trabajos en curso y los trabajos antiguos que se detuvieron antes de terminar.",
-    "note_per_month": "Cargas por mes divide entre todos los meses que abarca el rango, incluidos el primer y el último mes parciales.",
+    "note_per_month": "El promedio de cargas por mes divide entre todos los meses que abarca el rango, incluidos el primer y el último mes parciales.",
     "note_size": "El tamaño de la red es el número de filas cargadas; las cifras de tamaño usan solo trabajos completados."
   },
   "computed_attributes": {
@@ -791,5 +831,31 @@
     "migrated_tag": " Migrado a clúster de múltiples secuencias por persona",
     "migrated_used": "; usó las siguientes secuencias ",
     "migrated_ignored": "; ignoró las siguientes secuencias "
+  },
+  "contact": {
+    "support_request_title": "¿Qué incluye una buena solicitud de soporte?",
+    "support_request_tip": "Proporcione la mayor cantidad posible de información esencial.",
+    "email_us": "Escriba a {{first}} o a {{second}} para cualquier consulta."
+  },
+  "resources": {
+    "title": "Recursos",
+    "sas_programs": "Programas de SAS",
+    "sas_prepare_data": "Programa de SAS n.º 1: Preparación de datos",
+    "sas_cluster_summary": "Programa de SAS n.º 2: Resumen de clústeres",
+    "sas_data_quality": "Programa de SAS n.º 3: Preparación para la calidad de los datos",
+    "documentation": "Documentación",
+    "variables_and_responses": "Nombres de variables y respuestas",
+    "manual": "Manual de {{name}}",
+    "visualization_guidance": "Guía de visualización de {{name}}",
+    "security_overview": "Resumen de evaluación y concientización sobre seguridad",
+    "guides": "Guías",
+    "programs_guidance": "Guía de programas de {{name}}"
+  },
+  "error_page": {
+    "title_400": "Esta solicitud no es válida",
+    "title_404": "Página no encontrada",
+    "title_500": "Algo salió mal",
+    "text_404": "La página que busca no existe.",
+    "back_home": "Volver a la página de inicio"
   }
 }

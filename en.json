@@ -35,7 +35,7 @@
     "start_a_new_network": "Start a New Network",
     "delete_caution_msg": "This will delete all runs stored after {date} at {time}. Are you absolutely sure you want to do this?",
     "delete_total_history_msg": "This will delete all listed stored networks. Are you absolutely sure you want to do this?",
-    "contact_hivtrace": "Contact Seguro HIV-TRACE",
+    "contact_hivtrace": "Contact Secure HIV-TRACE",
     "stored": "Stored",
     "delete_history_failed": "The network history could not be deleted. Please try again.",
     "session_expired_title": "Session expired",
@@ -62,7 +62,13 @@
     "staging_edition": "Staging edition",
     "person_clusters": "Clusters (persons)",
     "person_level_note": "Counts are per person: several sequences of one person count once.",
-    "size_note": "Size counts the rows of the uploaded file, blank rows included. Uploaded records on the results page count only rows with data."
+    "size_note": "Size counts the rows of the uploaded file, blank rows included. Uploaded records on the results page count only rows with data.",
+    "sequence_homology_screening": "Sequence Homology Screening",
+    "conduct_sequence_homology_screening": "Conduct New Sequence Homology Screening",
+    "previous_runs": "Previous Runs",
+    "go_to": "Go To",
+    "no_prior_screenings": "No prior quality control screenings have been conducted.",
+    "revert_caution_msg": "This will delete all runs stored after {{created}}. Are you absolutely sure you want to do this?"
   },
   "submission": {
     "formatting_info": "Resources",
@@ -95,7 +101,18 @@
     "review_parameters_desc": "Some parameters are not acceptable.",
     "required": "This field is required.",
     "no_file_selected": "No file selected",
-    "file_hint": "Accepted format: CSV file (.csv)."
+    "file_hint": "Accepted format: CSV file (.csv).",
+    "using_file_from_analysis": "Using file from analysis {{id}}",
+    "dram_wheeler": "CDC Surveillance List",
+    "ambiguity_fraction_title": "Handling sequences with many ambiguities",
+    "ambiguity_fraction_desc": "<p class='text-danger'>Affects <em>only</em> the <b>Resolve</b> option for handling ambiguities</p>Any sequence with no more than the selected proportion [{{min}} - {{max}}] will have its ambiguities resolved (if possible), and ambiguities in sequences with higher fractions of them will be averaged. This mitigates spurious linkages due to highly ambiguous sequences.",
+    "ambiguity_fraction_note": "This setting only applies when ambiguity handling is set to Resolve.",
+    "whole_number": "Enter a whole number.",
+    "min_overlap_invalid": "The minimum overlap must be a whole number from 50 to 5000.",
+    "cumulative_note": "Upload the complete, cumulative dataset: every record from earlier uploads plus the new ones, not only the new records.",
+    "file_columns_hint": "The file needs a header row with the columns {{uid}} and {{sequence}}, or {{uid_alt}} and {{sequence_alt}}.",
+    "parameters_used": "Parameters used: distance threshold {{distance_threshold}}, minimum overlap {{min_overlap}}, handle ambiguities: {{ambiguity_handling}} (fraction {{ambiguity_fraction}}), remove DRAMS: {{strip_drams}}.",
+    "identical_file": "This file is identical to the file of the last completed analysis. Uploading it again will repeat that analysis."
   },
   "validation": {
     "parsing": "Parsing File",
@@ -162,7 +179,10 @@
     "save": "Save",
     "dismiss": "Dismiss",
     "export_to_json": "Export to JSON",
-    "unnamed": "unnamed"
+    "unnamed": "unnamed",
+    "sort_by": "Sort by {{name}}",
+    "help": "Help",
+    "help_about": "Help: {{topic}}"
   },
   "network_tab": {
     "color": "Color",
@@ -180,12 +200,12 @@
     "hide_labels_for_all": "Hide labels for all nodes",
     "highlight_unsupported_edges": "Highlight unsupported edges",
     "show_epidemiological_growth": "Show epidemiological growth",
-    "only_recent_clusters": "Show only clusters changed in the recent 12 months",
+    "only_recent_clusters": "Show only clusters with cases dated in the last 12 months",
     "show_removed_edges": "Show removed edges",
     "min_cluster_size": "Minimum cluster size",
-    "toggle_epicurve": "Toggle Epicurve",
+    "toggle_epicurve": "Show or hide the epidemic curve (cases by quarter)",
     "text_in_attributes": "Text in attributes",
-    "cluster_display_info": "Only displaying clusters with nodes dates in the last 12 months [use the Clusters menu to change this]",
+    "cluster_display_info": "Only displaying clusters with cases dated in the last 12 months [use the Clusters menu to change this]",
     "search_help": "Type in text to select columns which <em>contain the term</em>. <br /> For example, typing in <code>MSM</code> will select rows that have 'MSM' as a part of the column value. <p /> Type in space separated terms (<code>MSM IDU</code>) to search for <b>either</b> term. <p/> Type in terms in quotes (<code>'male'</code>) to search for this <b>exact</b> term.<p/> If columns have date information you can use <code>YYYYMMDD:YYYYMMDD</code> to search for date ranges.<p/> Use <code>&lt;value</code> or <code>&gt;value</code> to search numerical columns<p/>",
     "categorical": "Categorical",
     "continuous": "Continuous",
@@ -288,7 +308,11 @@
     "social_nodes": "{{count}} {{annotation}} node. ",
     "social_nodes_plural": "{{count}} {{annotation}} nodes. ",
     "social_bridges": "Bridges to {{count}} cluster",
-    "social_bridges_plural": "Bridges to {{count}} clusters"
+    "social_bridges_plural": "Bridges to {{count}} clusters",
+    "empty_filtered": "No cluster is shown: the current filters hide the {{count}} cluster.",
+    "empty_filtered_plural": "No cluster is shown: the current filters hide all {{count}} clusters.",
+    "show_all_clusters": "Show all clusters",
+    "epicurve_no_dates": "No cases with a date to plot."
   },
   "clusters_main": {
     "search_text_in_attributes": "Search text in attributes",
@@ -301,7 +325,9 @@
     "collapse_cluster": "Collapse cluster",
     "export_colors": "Copy color scheme",
     "reset_layout": "Reset layout",
-    "category_limit": "Category Limit"
+    "category_limit": "Category Limit",
+    "reset_layout_packed": "Reset layout (packed)",
+    "reset_layout_tiled": "Reset layout (tiled)"
   },
   "statistics": {
     "network_statistics": "Network Statistics",
@@ -338,7 +364,7 @@
     "scaled_number_of_genotypes_in_past_2_months": "Genotypes past 2 mo scaled",
     "group_by_attribute": "Group by attribute",
     "group_by_id": "Group by ID",
-    "listing_nodes": "Listing nodes ",
+    "listing_nodes": "Listing nodes in",
     "missing": "Missing",
     "diff_moved": "{{count}} moved",
     "diff_moved_plural": "{{count}} moved",
@@ -363,7 +389,8 @@
     "cases_dx_36": "Cases dx within 36 months",
     "cases_dx_36_help": "Number of cases diagnosed in the past 36 months connected only through cases diagnosed within the past 36 months",
     "cases_dx_12": "Cases dx within 12 months",
-    "cases_dx_12_help": "Number of cases diagnosed in the past 12 months connected only through cases diagnosed within the past 36 months"
+    "cases_dx_12_help": "Number of cases diagnosed in the past 12 months connected only through cases diagnosed within the past 36 months",
+    "actions": "Actions"
   },
   "nodes_tab": {
     "clustered_invidiuals": "Clustered Invidiuals",
@@ -382,12 +409,18 @@
     "node_degree": "Node degree",
     "not_defined": "Not defined",
     "truncated": "Truncated due to the large number of rows ({{count}})",
-    "filter_help": "Type in text to select columns which <em>contain the term</em>. <br /> For example, typing in <code>MSM</code> will select rows that have \"MSM\" as a part of the column value. <p /> Type in space separated terms (<code>MSM IDU</code>) to search for <b>either</b> term. <p/> Type in terms in quotes (<code>\"male\"</code>) to search for this <b>exact</b> term.<p/> If columns have date information you can use <code>YYYYMMDD:YYYYMMDD</code> to search for date ranges.<p/> Use <code>&lt;value</code> or <code>&gt;value</code> to search numerical columns<p/>"
+    "filter_help": "Type in text to select columns which <em>contain the term</em>. <br /> For example, typing in <code>MSM</code> will select rows that have \"MSM\" as a part of the column value. <p /> Type in space separated terms (<code>MSM IDU</code>) to search for <b>either</b> term. <p/> Type in terms in quotes (<code>\"male\"</code>) to search for this <b>exact</b> term.<p/> If columns have date information you can use <code>YYYYMMDD:YYYYMMDD</code> to search for date ranges.<p/> Use <code>&lt;value</code> or <code>&gt;value</code> to search numerical columns<p/>",
+    "filter_reset": "Clear filter",
+    "filter_apply": "Apply filter",
+    "export_to_tsv": "Export to TSV"
   },
   "attributes_tab": {
     "show_as": "Show as %",
     "show_help": "This table shows how many connections exist between each pair of attribute values. For example, if a link connects a node which is 'Male' and a node that is 'Female', this link contributes a count of 1 to both 'Male/Female', and 'Female/Male' cells of the table. A link connecting a 'Male' node to a 'Male' node will contribute 2 counts to the Male/Male cell.",
-    "chord_diagram_help": "This panel will show either a <a href = 'https://en.wikipedia.org/wiki/Chord_diagram'><b>chord diagram</b></a> (for category values) or a <b>scatterplot</b> (for continous values). They are useful to display the pairings for node attributes across links. Mouse over a particular color to display what attribute it corresponds to in <b>chord diagrams</b>. Mouse over a particular point to display what link corresponds to in <b>histograms</b>. <p/> To better understand a <b>chord diagram</b>, consider a network with 100 links. 40 of these links connect males to males, 10 of the links connect females to females, and 50 - males to females. Males will be allocated (40 x 2 + 50) / 200 = .65, of the total circumference (pie slice size). The connection between males and females (with the males as the focus) will be given 50 / (50+40) = 5/9 of the weight. The connection between females and males (with the females as the focus) will be given 50 / (50+10) = 5/6 of the weight."
+    "chord_diagram_help": "This panel will show either a <a href = 'https://en.wikipedia.org/wiki/Chord_diagram'><b>chord diagram</b></a> (for category values) or a <b>scatterplot</b> (for continous values). They are useful to display the pairings for node attributes across links. Mouse over a particular color to display what attribute it corresponds to in <b>chord diagrams</b>. Mouse over a particular point to display what link corresponds to in <b>histograms</b>. <p/> To better understand a <b>chord diagram</b>, consider a network with 100 links. 40 of these links connect males to males, 10 of the links connect females to females, and 50 - males to females. Males will be allocated (40 x 2 + 50) / 200 = .65, of the total circumference (pie slice size). The connection between males and females (with the males as the focus) will be given 50 / (50+40) = 5/9 of the weight. The connection between females and males (with the females as the focus) will be given 50 / (50+10) = 5/6 of the weight.",
+    "patient_attributes": "Patient Attributes",
+    "attribute_name": "Name",
+    "attribute_value": "Value"
   },
   "admin": {
     "manage_users": "Manage Users",
@@ -472,8 +505,8 @@
     "timed_out": "The analysis did not finish in the allowed time. Please submit the job again.",
     "status_delayed": "Status updates are delayed. Retrying...",
     "error_prefix": "There was an error!",
-    "records_without_sequence": "{{count}} record without sequence data",
-    "records_without_sequence_plural": "{{count}} records without sequence data",
+    "records_without_sequence": "{{count}} record without a sequence",
+    "records_without_sequence_plural": "{{count}} records without a sequence",
     "records_without_sequence_help": "These records are kept with the attributes but are not included in the network analysis, which uses sequences only.",
     "qc_no_sequences": "No sequence passed quality control, so no network was built. The quality control reports show why.",
     "qc_failed": "Quality control could not be completed. Please try again or contact us.",
@@ -527,7 +560,14 @@
     "coi_unavailable_title": "Not available for this network",
     "coi_unavailable_body": "Clusters of interest are kept only for networks stored on the server.",
     "persons_multiple_sequences": "Persons with >1 sequence",
-    "persons_multiple_clusters": "Persons in multiple clusters"
+    "persons_multiple_clusters": "Persons in multiple clusters",
+    "load_social_network": "Load Social Network .CSV",
+    "select_color_palette": "Select color palette",
+    "invert": "Invert",
+    "matching_node": "Matching node",
+    "loading_network": "Loading the network",
+    "load_external_network": "Load external network information",
+    "attributes_hint": "Choose a categorical attribute to see how its values are linked to each other in the network."
   },
   "mail": {
     "new_user_request_subject": "New user added to Secure HIV-TRACE",
@@ -593,7 +633,7 @@
     "apply": "Apply",
     "export_csv": "Export (CSV)",
     "uploads": "Network uploads",
-    "uploads_per_month": "Uploads per month",
+    "uploads_per_month": "Average uploads per month",
     "median_network_size": "Median network size (completed)",
     "completed": "Completed",
     "failed": "Failed",
@@ -607,7 +647,7 @@
     "latest_upload_date": "Upload date of the latest stored network",
     "note_counts": "Every network job counts as an upload, whether or not its network was stored; the Previous Networks list shows only completed, stored networks. Reverted, removed and purged jobs are not counted. Months follow the date in Mexico City.",
     "note_status": "Not finished counts the jobs without a final status: running jobs, and older jobs that stopped before they finished.",
-    "note_per_month": "Uploads per month divides by every month the range touches, partial first and last months included.",
+    "note_per_month": "Average uploads per month divides by every month the range touches, partial first and last months included.",
     "note_size": "Network size is the number of uploaded rows; size figures use completed jobs only."
   },
   "computed_attributes": {
@@ -792,5 +832,31 @@
     "migrated_tag": " Migrated to multiple sequences per person cluster",
     "migrated_used": "; used the following sequences ",
     "migrated_ignored": "; ignored the following sequences "
+  },
+  "contact": {
+    "support_request_title": "What’s in a great support request?",
+    "support_request_tip": "Provide us with as much essential information as possible.",
+    "email_us": "Please email {{first}} or {{second}} with any inquiries you may have."
+  },
+  "resources": {
+    "title": "Resources",
+    "sas_programs": "SAS Programs",
+    "sas_prepare_data": "SAS Program #1 - Prepare Data",
+    "sas_cluster_summary": "SAS Program #2 - Cluster Summary",
+    "sas_data_quality": "SAS Program #3 - Data Quality Preparation",
+    "documentation": "Documentation",
+    "variables_and_responses": "Variable Names and Responses",
+    "manual": "{{name}} Manual",
+    "visualization_guidance": "{{name}} Visualization Guidance",
+    "security_overview": "Security Assessment and Awareness Overview",
+    "guides": "Guides",
+    "programs_guidance": "{{name}} Programs Guidance"
+  },
+  "error_page": {
+    "title_400": "This request is not valid",
+    "title_404": "Page not found",
+    "title_500": "Something went wrong",
+    "text_404": "The page you are looking for does not exist.",
+    "back_home": "Back to the home page"
   }
 }
