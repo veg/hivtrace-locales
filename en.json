@@ -112,7 +112,12 @@
     "cumulative_note": "Upload the complete, cumulative dataset: every record from earlier uploads plus the new ones, not only the new records.",
     "file_columns_hint": "The file needs a header row with the columns {{uid}} and {{sequence}}, or {{uid_alt}} and {{sequence_alt}}.",
     "parameters_used": "Parameters used: distance threshold {{distance_threshold}}, minimum overlap {{min_overlap}}, handle ambiguities: {{ambiguity_handling}} (fraction {{ambiguity_fraction}}), remove DRAMS: {{strip_drams}}.",
-    "identical_file": "This file is identical to the file of the last completed analysis. Uploading it again will repeat that analysis."
+    "identical_file": "This file is identical to the file of the last completed analysis. Uploading it again will repeat that analysis.",
+    "distance_threshold_invalid": "The distance threshold must be a number from 0 to 1.",
+    "ambiguity_handling_invalid": "The ambiguity handling must be Resolve or Average.",
+    "strip_drams_invalid": "The option to remove drug resistance mutations is not valid.",
+    "fraction_invalid": "The ambiguity fraction must be a number from 0 to 1.",
+    "duplicate_header": "The file has the column \"{{column}}\" more than once. Each column name must appear only once."
   },
   "validation": {
     "parsing": "Parsing File",
@@ -493,7 +498,14 @@
     "mail_error_site": "Choose an existing site.",
     "mail_error_confirm": "Confirm that the message goes to every active user.",
     "mail_error_none": "No active user would receive this message.",
-    "mail_error_lookup": "The message could not be sent. Please try again later."
+    "mail_error_lookup": "The message could not be sent. Please try again later.",
+    "reset_link_title": "Password reset link",
+    "reset_link_invalid": "This password reset link is not valid or has already been used.",
+    "reset_link_expired": "This password reset link has expired.",
+    "reset_link_request_new": "Request a new password reset link",
+    "error_self_removal": "You cannot remove your own account. Ask another administrator to do it.",
+    "error_self_demotion": "You cannot change your own role. Ask another administrator to do it.",
+    "error_last_admin": "This is the last administrator. Make another user an administrator first."
   },
   "job": {
     "results_load_failed": "The results could not be loaded. Please reload the page or contact us.",

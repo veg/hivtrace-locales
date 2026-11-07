@@ -111,7 +111,12 @@
     "cumulative_note": "Suba el conjunto de datos completo y acumulado: todos los registros de cargas anteriores más los nuevos, no solo los nuevos.",
     "file_columns_hint": "El archivo necesita una fila de encabezado con las columnas {{uid}} y {{sequence}}, o {{uid_alt}} y {{sequence_alt}}.",
     "parameters_used": "Parámetros utilizados: umbral de distancia {{distance_threshold}}, traslape mínimo {{min_overlap}}, resolver ambigüedades: {{ambiguity_handling}} (fracción {{ambiguity_fraction}}), remover DRAMS: {{strip_drams}}.",
-    "identical_file": "Este archivo es idéntico al del último análisis completado. Subirlo de nuevo repetirá ese análisis."
+    "identical_file": "Este archivo es idéntico al del último análisis completado. Subirlo de nuevo repetirá ese análisis.",
+    "distance_threshold_invalid": "El umbral de distancia debe ser un número de 0 a 1.",
+    "ambiguity_handling_invalid": "El manejo de ambigüedades debe ser Resolver o Promediar.",
+    "strip_drams_invalid": "La opción para eliminar mutaciones de resistencia a fármacos no es válida.",
+    "fraction_invalid": "La fracción de ambigüedad debe ser un número de 0 a 1.",
+    "duplicate_header": "El archivo tiene la columna \"{{column}}\" más de una vez. Cada nombre de columna debe aparecer una sola vez."
   },
   "validation": {
     "parsing": "Analizando archivo",
@@ -492,7 +497,14 @@
     "mail_error_site": "Elija un sitio existente.",
     "mail_error_confirm": "Confirme que el mensaje se envía a todos los usuarios activos.",
     "mail_error_none": "Ningún usuario activo recibiría este mensaje.",
-    "mail_error_lookup": "No se pudo enviar el mensaje. Inténtelo de nuevo más tarde."
+    "mail_error_lookup": "No se pudo enviar el mensaje. Inténtelo de nuevo más tarde.",
+    "reset_link_title": "Enlace de restablecimiento de contraseña",
+    "reset_link_invalid": "Este enlace de restablecimiento de contraseña no es válido o ya se ha utilizado.",
+    "reset_link_expired": "Este enlace de restablecimiento de contraseña ha caducado.",
+    "reset_link_request_new": "Solicitar un nuevo enlace de restablecimiento de contraseña",
+    "error_self_removal": "No puede eliminar su propia cuenta. Pida a otro administrador que lo haga.",
+    "error_self_demotion": "No puede cambiar su propio rol. Pida a otro administrador que lo haga.",
+    "error_last_admin": "Este es el último administrador. Primero convierta a otro usuario en administrador."
   },
   "job": {
     "results_load_failed": "No se pudieron cargar los resultados. Vuelva a cargar la página o contáctenos.",
