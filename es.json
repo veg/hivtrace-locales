@@ -229,7 +229,7 @@
     "toggle_epicurve": "Mostrar u ocultar la curva epidémica (casos por trimestre)",
     "text_in_attributes": "Texto en atributos",
     "cluster_display_info": "Solo se muestran clústeres con casos de los últimos 12 meses (cámbielo en el menú Clústeres).",
-    "search_help": "Teclee un término para seleccionar las filas cuyas columnas <em>contienen dicho término</em>. <br /> p. ej., al escribir <code>Mujer</code> se seleccionarán filas que incluyan el valor 'Mujer'. <p /> Escriba términos separados por espacios (<code>Mujer UDI</code>) para buscar <b>uno u otro</b>. <p/> Escriba entre comillas (<code>'Mujer'</code>) para buscar el término <b>exacto</b>.<p/> Si las columnas contienen fechas, puede usar <code> AAAAMMDD:AAAAMMDD</code> para buscar intervalos de fechas.<p/> Utilice <code>&lt;valor</code> o <code>&gt;valor</code> para buscar columnas numéricas<p/>",
+    "search_help": "Teclee un término para seleccionar las filas cuyas columnas <em>contienen dicho término</em>. <br /> p. ej., al escribir <code>Mujer</code> se seleccionarán filas que incluyan el valor 'Mujer'. <p /> Escriba términos separados por espacios (<code>Mujer UDI</code>) para buscar <b>uno u otro</b>. <p/> Escriba entre comillas (<code>'Mujer'</code>) para buscar el término <b>exacto</b>.<p/> Si las columnas contienen fechas, puede usar <code>AAAAMMDD:AAAAMMDD</code> para buscar intervalos de fechas.<p/> Utilice <code>&lt;valor</code> o <code>&gt;valor</code> para buscar columnas numéricas<p/>",
     "categorical": "Categórica",
     "continuous": "Continua",
     "update_attribute": "Cambios en las secuencias respecto a la red anterior",
