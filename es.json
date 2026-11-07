@@ -514,6 +514,7 @@
     "error_last_admin": "Este es el último administrador. Primero convierta a otro usuario en administrador.",
     "site_class_invalid": "La clase del sitio no es válida.",
     "site_id_in_use": "Ese identificador de sitio ya está en uso.",
+    "site_id_invalid": "El id del sitio no es válido.",
     "site_name_invalid": "El nombre del sitio debe tener de 1 a {{max}} caracteres, sin saltos de línea, caracteres de control, < ni >."
   },
   "job": {

@@ -515,6 +515,7 @@
     "error_last_admin": "This is the last administrator. Make another user an administrator first.",
     "site_class_invalid": "The site class is not valid.",
     "site_id_in_use": "That site id is already in use.",
+    "site_id_invalid": "The site id is not valid.",
     "site_name_invalid": "The site name must have 1 to {{max}} characters, with no line breaks, control characters, < or >."
   },
   "job": {
