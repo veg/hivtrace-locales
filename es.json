@@ -323,7 +323,7 @@
     "social_nodes_plural": "{{count}} nodos {{annotation}}. ",
     "social_bridges": "Conecta con {{count}} clúster",
     "social_bridges_plural": "Conecta con {{count}} clústeres",
-    "empty_filtered": "No se muestra ningún clúster: los filtros actuales ocultan el clúster.",
+    "empty_filtered": "No se muestra ningún clúster: los filtros actuales ocultan {{count}} clúster.",
     "empty_filtered_plural": "No se muestra ningún clúster: los filtros actuales ocultan los {{count}} clústeres.",
     "show_all_clusters": "Mostrar todos los clústeres",
     "epicurve_no_dates": "Ningún caso tiene fecha para graficar."
