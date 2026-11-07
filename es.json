@@ -115,6 +115,7 @@
     "distance_threshold_invalid": "El umbral de distancia debe ser un número de 0 a 1.",
     "ambiguity_handling_invalid": "El manejo de ambigüedades debe ser Resolver o Promediar.",
     "strip_drams_invalid": "La opción para eliminar mutaciones de resistencia a fármacos no es válida.",
+    "analysis_parameter_invalid": "Un parámetro de análisis no es válido.",
     "fraction_invalid": "La fracción de ambigüedad debe ser un número de 0 a 1.",
     "duplicate_header": "El archivo tiene la columna \"{{column}}\" más de una vez. Cada nombre de columna debe aparecer una sola vez."
   },

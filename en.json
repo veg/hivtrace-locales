@@ -116,6 +116,7 @@
     "distance_threshold_invalid": "The distance threshold must be a number from 0 to 1.",
     "ambiguity_handling_invalid": "The ambiguity handling must be Resolve or Average.",
     "strip_drams_invalid": "The option to remove drug resistance mutations is not valid.",
+    "analysis_parameter_invalid": "An analysis parameter is not valid.",
     "fraction_invalid": "The ambiguity fraction must be a number from 0 to 1.",
     "duplicate_header": "The file has the column \"{{column}}\" more than once. Each column name must appear only once."
   },
