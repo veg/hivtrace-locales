@@ -71,7 +71,12 @@
     "revert_caution_msg": "¿Está seguro de que quiere continuar? Se eliminarán todas las corridas guardadas después del {{created}}.",
     "revert_delete_msg": "Esto eliminará estas redes más recientes ({{total}}): {{list}}. ¿Está absolutamente seguro de que desea hacerlo?",
     "revert_delete_none": "No se eliminará ninguna red más reciente. ¿Está absolutamente seguro de que desea hacerlo?",
-    "revert_delete_more": " y {{total}} más"
+    "revert_delete_more": " y {{total}} más",
+    "attribute": "Atributo",
+    "class_one_welcome": "Bienvenido. Su sitio es Clase I.",
+    "executive_banner": "Modo ejecutivo: no puede subir datos ni modificar redes.",
+    "executive_mode": "(Modo ejecutivo)",
+    "start_analysis": "Inicie un análisis."
   },
   "submission": {
     "formatting_info": "Recursos",
@@ -126,7 +131,10 @@
     "duplicate_header": "El archivo tiene la columna \"{{column}}\" más de una vez. Cada nombre de columna debe aparecer una sola vez.",
     "csv_no_data": "El archivo no tiene filas de datos. Suba un archivo CSV con una fila de encabezado y al menos un registro.",
     "csv_delimiter": "El archivo debe estar separado por comas. Guárdelo como un archivo CSV con comas (no con punto y coma ni tabulaciones) y vuelva a subirlo.",
-    "invalid_date": "La columna \"{{column}}\" tiene una fecha que no existe (fila {{row}} de los datos). Las fechas deben tener el formato día/mes/año, por ejemplo 03/04/2023."
+    "invalid_date": "La columna \"{{column}}\" tiene una fecha que no existe (fila {{row}} de los datos). Las fechas deben tener el formato día/mes/año, por ejemplo 03/04/2023.",
+    "dram_none_help": "Usar todos los sitios en las distancias por pares",
+    "dram_wheeler_help": "Enmascarar (con ---) los codones de {{link}}",
+    "file_save_failed": "No se pudo guardar el archivo."
   },
   "validation": {
     "parsing": "Analizando archivo",
@@ -196,7 +204,8 @@
     "unnamed": "sin nombre",
     "sort_by": "Ordenar por {{name}}",
     "help": "Ayuda",
-    "help_about": "Ayuda: {{topic}}"
+    "help_about": "Ayuda: {{topic}}",
+    "submit": "Enviar"
   },
   "network_tab": {
     "color": "Color",
@@ -326,7 +335,8 @@
     "empty_filtered": "No se muestra ningún clúster: los filtros actuales ocultan {{count}} clúster.",
     "empty_filtered_plural": "No se muestra ningún clúster: los filtros actuales ocultan los {{count}} clústeres.",
     "show_all_clusters": "Mostrar todos los clústeres",
-    "epicurve_no_dates": "Ningún caso tiene fecha para graficar."
+    "epicurve_no_dates": "Ningún caso tiene fecha para graficar.",
+    "no_clusters": "La red no tiene clústeres; no se puede mostrar."
   },
   "clusters_main": {
     "search_text_in_attributes": "Buscar texto en atributos",
@@ -405,7 +415,8 @@
     "cases_dx_36_help": "Número de casos diagnosticados en los últimos 36 meses conectados solo a través de casos diagnosticados en los últimos 36 meses",
     "cases_dx_12": "Casos dx ≤12 meses",
     "cases_dx_12_help": "Número de casos diagnosticados en los últimos 12 meses conectados solo a través de casos diagnosticados en los últimos 36 meses",
-    "actions": "Acciones"
+    "actions": "Acciones",
+    "collapse": "Contraer"
   },
   "nodes_tab": {
     "clustered_invidiuals": "Personas en clústeres",
@@ -427,7 +438,9 @@
     "filter_help": "Escriba un término para seleccionar las filas cuyas columnas <em>contienen dicho término</em>. <br /> Por ejemplo, al escribir <code>Mujer</code> se seleccionan las filas que tienen \"Mujer\" como parte del valor de la columna. <p /> Escriba términos separados por espacios (<code>Mujer UDI</code>) para buscar <b>cualquiera</b> de ellos. <p/> Escriba términos entre comillas dobles (<code>\"Mujer\"</code>) para buscar ese término <b>exacto</b>.<p/> Si las columnas contienen fechas, puede usar <code>AAAAMMDD:AAAAMMDD</code> para buscar intervalos de fechas.<p/> Use <code>&lt;valor</code> o <code>&gt;valor</code> para buscar en columnas numéricas<p/>",
     "filter_reset": "Borrar filtro",
     "filter_apply": "Aplicar filtro",
-    "export_to_tsv": "Exportar a TSV"
+    "export_to_tsv": "Exportar a TSV",
+    "table_limited": "Se muestran las primeras {{shown}} de {{total}} personas.",
+    "table_limited_export": "La exportación a CSV incluye a todas las personas de la red."
   },
   "attributes_tab": {
     "show_as": "Mostrar en %",
@@ -519,7 +532,21 @@
     "site_class_invalid": "La clase del sitio no es válida.",
     "site_id_in_use": "Ese identificador de sitio ya está en uso.",
     "site_id_invalid": "El ID del sitio no es válido.",
-    "site_name_invalid": "El nombre del sitio debe tener de 1 a {{max}} caracteres, sin saltos de línea, caracteres de control, < ni >."
+    "site_name_invalid": "El nombre del sitio debe tener de 1 a {{max}} caracteres, sin saltos de línea, caracteres de control, < ni >.",
+    "add_a_site": "Agregar sitio",
+    "add_a_user": "Agregar usuario",
+    "class_1": "Clase I",
+    "class_2": "Clase II",
+    "class_3": "Clase III",
+    "delete_user_confirm": "Se eliminará al usuario {{name}} ({{email}}). ¿Está completamente seguro?",
+    "delete_variable_confirm": "Se eliminará la variable {{label}} ({{type}}). ¿Está completamente seguro?",
+    "invalid_password": "Contraseña no válida",
+    "modify_site": "Modificar sitio",
+    "modify_user": "Modificar usuario",
+    "never": "Nunca",
+    "password_rules": "Al menos un (1) carácter de 3 de las cuatro (4) categorías (A-Z, a-z, 0-9, caracteres especiales); longitud mínima de ocho (8) caracteres para usuarios regulares y de quince (15) para administradores o usuarios con privilegios.",
+    "user_management": "Administración de usuarios",
+    "variables_saved": "Variables guardadas"
   },
   "job": {
     "results_load_failed": "No se pudieron cargar los resultados. Vuelva a cargar la página o contáctenos.",
@@ -593,7 +620,26 @@
     "matching_node": "Nodo coincidente",
     "loading_network": "Cargando la red",
     "load_external_network": "Cargar información de red externa",
-    "attributes_hint": "Elija un atributo categórico para ver cómo se vinculan sus valores entre sí en la red."
+    "attributes_hint": "Elija un atributo categórico para ver cómo se vinculan sus valores entre sí en la red.",
+    "external_data_type": "Tipo de datos",
+    "external_data_type_help": "Nombre descriptivo del tipo de datos que se carga.",
+    "external_edge_file": "Archivo de atributos de enlaces",
+    "external_edge_file_help": "CSV con enlaces y sus atributos.",
+    "external_loading": "Cargando...",
+    "external_node_file": "Archivo de atributos de nodos",
+    "external_node_file_help": "CSV con atributos de nodos.",
+    "legend_clusters_1": "se muestran como círculos con borde grueso",
+    "legend_clusters_2": "con <em>área</em> proporcional al número de nodos del clúster. Haga clic en un clúster para ver sus opciones; arrástrelo para moverlo.",
+    "legend_hide_others": "Use la casilla <code>{{label}}</code> para ocultar automáticamente los clústeres y nodos que no coincidan con la búsqueda",
+    "legend_nodes_1": "se muestran con distintos símbolos (según las opciones de visualización) y borde fino",
+    "legend_nodes_2": ", y su <em>área</em> crece con el número de enlaces.",
+    "legend_search_1": "Escriba un texto para buscar clústeres y nodos cuyos <em>atributos contengan el término</em>.",
+    "legend_search_2": "Por ejemplo, si escribe <code>HSH</code>, se resaltan los nodos y clústeres que tengan 'HSH' en cualquier campo.",
+    "legend_search_3": "Escriba términos separados por espacios (<code>HSH UDI</code>) para buscar <b>cualquiera</b> de ellos.",
+    "legend_search_4": "Los términos entre comillas (<code>\"hombre\"</code>) buscan ese término <b>exacto</b>.",
+    "legend_search_5": "Escriba <code>&lt;0.01</code> para buscar nodos con enlaces de 0.01 (1%) o menos. Sirve cualquier umbral positivo.",
+    "legend_small_clusters": "Use la casilla <code>{{label}}</code> para mostrar los clústeres pequeños que se hayan ocultado para mayor claridad",
+    "too_large": "Resultados demasiado grandes para visualizar."
   },
   "mail": {
     "new_user_request_subject": "Nuevo usuario en Seguro HIV-TRACE",
@@ -605,7 +651,12 @@
     "added_by": "Agregado por",
     "unknown": "desconocido",
     "app_link": "Puede acceder a Seguro HIV-TRACE en",
-    "signoff": "Saludos cordiales,"
+    "signoff": "Saludos cordiales,",
+    "job_complete_subject": "[Seguro HIV-TRACE] Su trabajo terminó",
+    "job_error_subject": "Error en su trabajo: {{id}}",
+    "new_user_subject": "Bienvenido a Seguro HIV-TRACE",
+    "qc_complete_subject": "[Seguro HIV-TRACE] Control de calidad terminado",
+    "reset_password_subject": "Seguro HIV-TRACE: restablecer contraseña"
   },
   "attributes": {
     "genero": "Género",
@@ -857,7 +908,8 @@
     "merge_col_coi_help": "Nombre del clúster de interés",
     "migrated_tag": " Migrado a clúster de múltiples secuencias por persona",
     "migrated_used": "; usó las siguientes secuencias ",
-    "migrated_ignored": "; ignoró las siguientes secuencias "
+    "migrated_ignored": "; ignoró las siguientes secuencias ",
+    "overlap_cluster": "Clúster de interés superpuesto"
   },
   "contact": {
     "support_request_title": "¿Qué incluye una buena solicitud de soporte?",
@@ -884,5 +936,65 @@
     "title_500": "Algo salió mal",
     "text_404": "La página que busca no existe.",
     "back_home": "Volver a la página de inicio"
+  },
+  "forgot": {
+    "email_repeat": "Repita el correo",
+    "enter_email": "Ingrese su correo electrónico"
+  },
+  "jobqueue": {
+    "title": "Cola de trabajos"
+  },
+  "login": {
+    "bad_credentials": "Usuario o contraseña incorrectos",
+    "locked": "Cuenta bloqueada",
+    "locked_note": "Demasiados intentos fallidos. Espere hasta dos horas e intente de nuevo.",
+    "password_changed": "Contraseña cambiada",
+    "password_changed_note": "Ingrese su nueva contraseña",
+    "reset_requested": "Cambio de contraseña solicitado",
+    "reset_requested_note": "Revise su correo para ver las instrucciones.",
+    "try_again": "Intente de nuevo"
+  },
+  "privacy": {
+    "document": "Documento del aviso de privacidad",
+    "title": "Aviso de privacidad"
+  },
+  "qc": {
+    "download_all": "Descargar todos los informes",
+    "download_report": "Descargar informe",
+    "not_accessible": "Revisión de calidad no disponible",
+    "passed": "Revisión de calidad aprobada",
+    "problem_rows": "{{rows}} filas con problemas",
+    "sas_program": "Programa SAS n.º 3: calidad de datos",
+    "select_file": "Archivo a revisar"
+  },
+  "sharing": {
+    "attribute": "Atributo",
+    "preferences": "Preferencias de uso compartido",
+    "saved": "Preferencias guardadas",
+    "title": "Uso compartido de atributos (Clase III)",
+    "toggle": "Compartir"
+  },
+  "unauthorized": {
+    "body": "No tiene autorización para ver esta página.",
+    "contact": "Si cree que llegó a esta página por error, escriba a hivtrace@ucsd.edu.",
+    "title": "Acceso denegado"
+  },
+  "update_password": {
+    "new": "Nueva contraseña",
+    "repeat": "Repita la contraseña",
+    "title": "Actualizar contraseña"
+  },
+  "upload": {
+    "csv_problems": "Problemas en el archivo CSV.",
+    "invalid_attributes": "Atributos no válidos",
+    "invalid_attributes_note": "Se reemplazarán por Missing.",
+    "invalid_count": "{{omitted}} de {{total}} registros no válidos.",
+    "invalid_rows": "Filas no válidas",
+    "invalid_rows_note": "Se omitirán.",
+    "not_stored": "Se encontraron filas no válidas. Si continúa, el conjunto de datos no se guardará.",
+    "preparing": "Preparando datos",
+    "preparing_wait": "Espere un momento.",
+    "quality_report": "Informe de calidad",
+    "review_highlighted": "Revise lo resaltado y elija una acción."
   }
 }

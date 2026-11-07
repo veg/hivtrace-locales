@@ -71,7 +71,12 @@
     "revert_caution_msg": "This will delete all runs stored after {{created}}. Are you absolutely sure you want to do this?",
     "revert_delete_msg": "This will delete these newer networks ({{total}}): {{list}}. Are you absolutely sure you want to do this?",
     "revert_delete_none": "No newer networks will be deleted. Are you absolutely sure you want to do this?",
-    "revert_delete_more": " and {{total}} more"
+    "revert_delete_more": " and {{total}} more",
+    "attribute": "Attribute",
+    "class_one_welcome": "Welcome. Your site is Class I.",
+    "executive_banner": "You are in Executive Mode. You will not be able to upload data or modify existing networks.",
+    "executive_mode": "(Executive Mode)",
+    "start_analysis": "Start an analysis."
   },
   "submission": {
     "formatting_info": "Resources",
@@ -126,7 +131,10 @@
     "duplicate_header": "The file has the column \"{{column}}\" more than once. Each column name must appear only once.",
     "csv_no_data": "The file has no data rows. Please upload a CSV file with a header row and at least one record.",
     "csv_delimiter": "The file must be comma-separated. Please save it as a CSV file with commas (not semicolons or tabs) and upload it again.",
-    "invalid_date": "The column \"{{column}}\" has a date that does not exist (row {{row}} of the data). Dates must be day/month/year, for example 03/04/2023."
+    "invalid_date": "The column \"{{column}}\" has a date that does not exist (row {{row}} of the data). Dates must be day/month/year, for example 03/04/2023.",
+    "dram_none_help": "Use all sites in pairwise distance calculations",
+    "dram_wheeler_help": "Mask (with ---) the list of codon sites defined in {{link}}",
+    "file_save_failed": "The file could not be saved."
   },
   "validation": {
     "parsing": "Parsing File",
@@ -196,7 +204,8 @@
     "unnamed": "unnamed",
     "sort_by": "Sort by {{name}}",
     "help": "Help",
-    "help_about": "Help: {{topic}}"
+    "help_about": "Help: {{topic}}",
+    "submit": "Submit"
   },
   "network_tab": {
     "color": "Color",
@@ -326,7 +335,8 @@
     "empty_filtered": "No cluster is shown: the current filters hide the {{count}} cluster.",
     "empty_filtered_plural": "No cluster is shown: the current filters hide all {{count}} clusters.",
     "show_all_clusters": "Show all clusters",
-    "epicurve_no_dates": "No cases with a date to plot."
+    "epicurve_no_dates": "No cases with a date to plot.",
+    "no_clusters": "This network contains no clusters and cannot be displayed"
   },
   "clusters_main": {
     "search_text_in_attributes": "Search text in attributes",
@@ -405,7 +415,8 @@
     "cases_dx_36_help": "Number of cases diagnosed in the past 36 months connected only through cases diagnosed within the past 36 months",
     "cases_dx_12": "Cases dx within 12 months",
     "cases_dx_12_help": "Number of cases diagnosed in the past 12 months connected only through cases diagnosed within the past 36 months",
-    "actions": "Actions"
+    "actions": "Actions",
+    "collapse": "Collapse"
   },
   "nodes_tab": {
     "clustered_invidiuals": "Clustered Individuals",
@@ -427,7 +438,9 @@
     "filter_help": "Type in text to select rows whose columns <em>contain the term</em>. <br /> For example, typing in <code>MSM</code> will select rows that have \"MSM\" as a part of the column value. <p /> Type in space separated terms (<code>MSM IDU</code>) to search for <b>either</b> term. <p/> Type in terms in quotes (<code>\"male\"</code>) to search for this <b>exact</b> term.<p/> If columns have date information you can use <code>YYYYMMDD:YYYYMMDD</code> to search for date ranges.<p/> Use <code>&lt;value</code> or <code>&gt;value</code> to search numerical columns<p/>",
     "filter_reset": "Clear filter",
     "filter_apply": "Apply filter",
-    "export_to_tsv": "Export to TSV"
+    "export_to_tsv": "Export to TSV",
+    "table_limited": "This table lists the first {{shown}} of {{total}} persons.",
+    "table_limited_export": "Export to CSV lists every person in the network."
   },
   "attributes_tab": {
     "show_as": "Show as %",
@@ -519,7 +532,21 @@
     "site_class_invalid": "The site class is not valid.",
     "site_id_in_use": "That site id is already in use.",
     "site_id_invalid": "The site id is not valid.",
-    "site_name_invalid": "The site name must have 1 to {{max}} characters, with no line breaks, control characters, < or >."
+    "site_name_invalid": "The site name must have 1 to {{max}} characters, with no line breaks, control characters, < or >.",
+    "add_a_site": "Add a Site",
+    "add_a_user": "Add a User",
+    "class_1": "Class I",
+    "class_2": "Class II",
+    "class_3": "Class III",
+    "delete_user_confirm": "This will delete user {{name}} ({{email}}). Are you absolutely sure you want to do this?",
+    "delete_variable_confirm": "This will delete variable {{label}} ({{type}}). Are you absolutely sure you want to do this?",
+    "invalid_password": "Invalid Password",
+    "modify_site": "Modify a Site",
+    "modify_user": "Modify a User",
+    "never": "Never",
+    "password_rules": "At least one (1) character from 3 of the four (4) character categories (A-Z, a-z, 0-9, special characters), and minimum length of eight (8) characters for regular user passwords, and minimum length of fifteen (15) characters for administrators or privileged users.",
+    "user_management": "User Management",
+    "variables_saved": "Saved Variable Settings"
   },
   "job": {
     "results_load_failed": "The results could not be loaded. Please reload the page or contact us.",
@@ -593,7 +620,26 @@
     "matching_node": "Matching node",
     "loading_network": "Loading the network",
     "load_external_network": "Load external network information",
-    "attributes_hint": "Choose a categorical attribute to see how its values are linked to each other in the network."
+    "attributes_hint": "Choose a categorical attribute to see how its values are linked to each other in the network.",
+    "external_data_type": "Data type label",
+    "external_data_type_help": "Descriptive name for the type of data being loaded.",
+    "external_edge_file": "Link attribute file",
+    "external_edge_file_help": "A CSV file with links and their attribute.",
+    "external_loading": "Loading...",
+    "external_node_file": "Node attribute file",
+    "external_node_file_help": "A CSV file with node attributes.",
+    "legend_clusters_1": "are shown as circles with thick rims",
+    "legend_clusters_2": "with <em>area</em> proportional to the number of nodes in a cluster. Click on clusters to show menu options, click and drag to reposition.",
+    "legend_hide_others": "Use the <code>{{label}}</code> checkbox to automatically hide all clusters/nodes that do not match the search terms",
+    "legend_nodes_1": "are shown as different symbols (depending on rendering options), with thin rims",
+    "legend_nodes_2": ", and <em>area</em> scaling with the number of links.",
+    "legend_search_1": "Type in text to search for clusters and nodes whose <em>attributes contain the term</em>.",
+    "legend_search_2": "For example, typing in <code>MSM</code> will highlight nodes and/or clusters that have 'MSM' in any of the data fields.",
+    "legend_search_3": "Type in space separated terms (<code>MSM IDU</code>) to search for <b>either</b> term.",
+    "legend_search_4": "Type in terms in quotes (<code>\"male\"</code>) to search for this <b>exact</b> term.",
+    "legend_search_5": "Type in <code>&lt;0.01</code> to search for nodes that have edges which are 0.01 (1%) or shorter. Any positive threshold works.",
+    "legend_small_clusters": "Use the <code>{{label}}</code> checkbox to display small clusters that may have been hidden for clarity",
+    "too_large": "The results are too large to visualize."
   },
   "mail": {
     "new_user_request_subject": "New user added to Secure HIV-TRACE",
@@ -605,7 +651,12 @@
     "added_by": "Added by",
     "unknown": "unknown",
     "app_link": "Secure HIV-TRACE can be accessed at",
-    "signoff": "Kind Regards,"
+    "signoff": "Kind Regards,",
+    "job_complete_subject": "[Secure HIV-TRACE] Your Job Has Completed",
+    "job_error_subject": "Something went wrong with your job: {{id}}",
+    "new_user_subject": "Welcome to Secure HIV-TRACE",
+    "qc_complete_subject": "[Secure HIV-TRACE] Your Quality Control Submission has Completed",
+    "reset_password_subject": "Secure HIV-TRACE : Reset Password"
   },
   "attributes": {
     "genero": "Gender",
@@ -857,7 +908,8 @@
     "merge_col_coi_help": "Cluster of interest name",
     "migrated_tag": " Migrated to multiple sequences per person cluster",
     "migrated_used": "; used the following sequences ",
-    "migrated_ignored": "; ignored the following sequences "
+    "migrated_ignored": "; ignored the following sequences ",
+    "overlap_cluster": "Overlapping Cluster of Interest"
   },
   "contact": {
     "support_request_title": "What’s in a great support request?",
@@ -884,5 +936,65 @@
     "title_500": "Something went wrong",
     "text_404": "The page you are looking for does not exist.",
     "back_home": "Back to the home page"
+  },
+  "forgot": {
+    "email_repeat": "Repeat email address",
+    "enter_email": "Please enter email address"
+  },
+  "jobqueue": {
+    "title": "Job Queue"
+  },
+  "login": {
+    "bad_credentials": "The username or password provided was incorrect",
+    "locked": "Your account has been locked",
+    "locked_note": "Your account has been temporarily locked due to multiple failed login attempts. Please wait up to two hours before trying again.",
+    "password_changed": "Successfully Changed Password",
+    "password_changed_note": "Please enter your new password to log in",
+    "reset_requested": "Password change has been requested",
+    "reset_requested_note": "Please check your email for further direction.",
+    "try_again": "Try again"
+  },
+  "privacy": {
+    "document": "Privacy Notice Document",
+    "title": "Privacy Notice"
+  },
+  "qc": {
+    "download_all": "Download All Reports",
+    "download_report": "Download Report",
+    "not_accessible": "Quality Check Not Accessible",
+    "passed": "Passed Quality Check!",
+    "problem_rows": "{{rows}} Problematic Rows",
+    "sas_program": "SAS Program #3 - Data Quality Preparation",
+    "select_file": "Select File to Screen"
+  },
+  "sharing": {
+    "attribute": "Attribute",
+    "preferences": "Multi-Jurisdictional Sharing Preferences",
+    "saved": "Saved Attribute Sharing Settings",
+    "title": "Class III Attribute Sharing Options",
+    "toggle": "Toggle"
+  },
+  "unauthorized": {
+    "body": "You are unauthorized to access this page.",
+    "contact": "If you believe you have reached this page in error, please contact hivtrace@ucsd.edu.",
+    "title": "Access denied"
+  },
+  "update_password": {
+    "new": "New Password",
+    "repeat": "Repeat New Password",
+    "title": "Update Password"
+  },
+  "upload": {
+    "csv_problems": "There were issues with the comma-delimited file provided.",
+    "invalid_attributes": "Invalid attributes",
+    "invalid_attributes_note": "These cells will be replaced with Missing.",
+    "invalid_count": "{{omitted}} of {{total}} records are not valid.",
+    "invalid_rows": "Invalid rows",
+    "invalid_rows_note": "These rows will be omitted.",
+    "not_stored": "Invalid rows were found. If you continue, the dataset will not be stored.",
+    "preparing": "Preparing Data for Analysis",
+    "preparing_wait": "Hang tight. Preparing dataset for analysis.",
+    "quality_report": "Quality report",
+    "review_highlighted": "Review the highlighted rows and cells and choose an action."
   }
 }
