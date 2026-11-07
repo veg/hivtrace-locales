@@ -91,6 +91,8 @@
     "upload_network_error": "No se pudo subir el archivo. Revise su conexión e inténtelo de nuevo.",
     "upload_parse_failed": "No se pudo procesar el archivo. Verifique que sea un archivo CSV válido.",
     "upload_not_allowed": "Este tipo de archivo no se acepta. Vuelva a subir el archivo CSV.",
+    "upload_no_rows": "El archivo no tiene filas de datos, solo la fila de encabezados. Suba un archivo con al menos una fila de datos.",
+    "upload_wrong_delimiter": "Las columnas del archivo deben estar separadas por comas. Este archivo usa punto y coma o tabuladores. Guárdelo como CSV separado por comas y vuelva a subirlo.",
     "network_date": "Fecha de referencia (opcional)",
     "network_date_desc": "Si se deja vacía, se usa la fecha del nombre del archivo (_AAAAMMDD) o la fecha de hoy.",
     "network_date_invalid": "La fecha de referencia no es válida. Use una fecha entre 1990-01-01 y hoy, con el formato AAAA-MM-DD.",

@@ -92,6 +92,8 @@
     "upload_network_error": "The upload failed. Please check your connection and try again.",
     "upload_parse_failed": "The file could not be processed. Please check that it is a valid CSV file.",
     "upload_not_allowed": "This file type is not accepted. Please upload the CSV file again.",
+    "upload_no_rows": "The file has no data rows, only the header row. Please upload a file with at least one row of data.",
+    "upload_wrong_delimiter": "The columns of the file must be separated by commas. This file uses semicolons or tabs. Please save it as a comma-separated CSV and upload it again.",
     "network_date": "Reference date (optional)",
     "network_date_desc": "If empty, a date in the file name (_YYYYMMDD) or today is used.",
     "network_date_invalid": "The reference date is not valid. Use a date from 1990-01-01 to today, in the format YYYY-MM-DD.",
