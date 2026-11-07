@@ -123,7 +123,7 @@
     "parsing": "Parsing File",
     "parsing_note": "Hang tight. Parsing large files (100k+ records) may take a few moments because we are validating each element.",
     "success_note": "The tab-delimited file provided cleared validation",
-    "error_note": "<p>There was an error with the comma-delimited file provided.</p><p>Please review that your file is a well-formed CSV with at least the following fields.</p>",
+    "error_note": "There was an error with the comma-delimited file provided. Please review that your file is a well-formed CSV with at least the following fields.",
     "id_error": "The file needs a UID field.",
     "sequence_error": "The file needs a Genetic Sequences field.",
     "fewer_records": "The uploaded file has fewer records than the most recently completed analysis.",
@@ -335,6 +335,7 @@
     "reset_layout_tiled": "Reset layout (tiled)"
   },
   "statistics": {
+    "genetic_distance_percent": "Genetic Distance (%)",
     "network_statistics": "Network Statistics",
     "singletons": "Singletons",
     "sequences_used_to_make_links": "Sequences used to make links",

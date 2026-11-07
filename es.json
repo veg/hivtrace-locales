@@ -122,7 +122,7 @@
     "parsing": "Analizando archivo",
     "parsing_note": "Espere un poco. El análisis de archivos grandes (+100k registros) puede tardar varios minutos porque estamos validando cada elemento.",
     "success_note": "El archivo ha sido validado con éxito",
-    "error_note": "<p>Ocurrió un error con el archivo proporcionado.</p><p>Por favor, compruebe que su archivo es de tipo CSV y contiene al menos los siguientes campos</p>",
+    "error_note": "Ocurrió un error con el archivo proporcionado. Por favor, compruebe que su archivo es de tipo CSV y contiene al menos los siguientes campos",
     "id_error": "El archivo requiere un campo UID.",
     "sequence_error": "El archivo requiere un campo de Secuencias Genéticas.",
     "fewer_records": "El archivo cargado contiene menos registros que el último análisis completado.",
@@ -334,6 +334,7 @@
     "reset_layout_tiled": "Restablecer visualización (en mosaico)"
   },
   "statistics": {
+    "genetic_distance_percent": "Distancia genética (%)",
     "network_statistics": "Estadísticas de la Red",
     "singletons": "Singletons",
     "sequences_used_to_make_links": "Secuencias que forman enlaces",
