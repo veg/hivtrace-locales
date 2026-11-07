@@ -67,7 +67,10 @@
     "previous_runs": "Corridas previas",
     "go_to": "Ir a",
     "no_prior_screenings": "No se han realizado tamizajes previos de control de calidad.",
-    "revert_caution_msg": "¿Está seguro de que quiere continuar? Se eliminarán todas las corridas guardadas después del {{created}}."
+    "revert_caution_msg": "¿Está seguro de que quiere continuar? Se eliminarán todas las corridas guardadas después del {{created}}.",
+    "revert_delete_msg": "Esto eliminará estas redes más recientes ({{total}}): {{list}}. ¿Está absolutamente seguro de que desea hacerlo?",
+    "revert_delete_none": "No se eliminará ninguna red más reciente. ¿Está absolutamente seguro de que desea hacerlo?",
+    "revert_delete_more": " y {{total}} más"
   },
   "submission": {
     "formatting_info": "Recursos informáticos",

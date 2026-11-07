@@ -68,7 +68,10 @@
     "previous_runs": "Previous Runs",
     "go_to": "Go To",
     "no_prior_screenings": "No prior quality control screenings have been conducted.",
-    "revert_caution_msg": "This will delete all runs stored after {{created}}. Are you absolutely sure you want to do this?"
+    "revert_caution_msg": "This will delete all runs stored after {{created}}. Are you absolutely sure you want to do this?",
+    "revert_delete_msg": "This will delete these newer networks ({{total}}): {{list}}. Are you absolutely sure you want to do this?",
+    "revert_delete_none": "No newer networks will be deleted. Are you absolutely sure you want to do this?",
+    "revert_delete_more": " and {{total}} more"
   },
   "submission": {
     "formatting_info": "Resources",
