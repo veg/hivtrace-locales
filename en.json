@@ -122,7 +122,8 @@
     "fraction_invalid": "The ambiguity fraction must be a number from 0 to 1.",
     "duplicate_header": "The file has the column \"{{column}}\" more than once. Each column name must appear only once.",
     "csv_no_data": "The file has no data rows. Please upload a CSV file with a header row and at least one record.",
-    "csv_delimiter": "The file must be comma-separated. Please save it as a CSV file with commas (not semicolons or tabs) and upload it again."
+    "csv_delimiter": "The file must be comma-separated. Please save it as a CSV file with commas (not semicolons or tabs) and upload it again.",
+    "invalid_date": "The column \"{{column}}\" has a date that does not exist (row {{row}} of the data). Dates must be day/month/year, for example 03/04/2023."
   },
   "validation": {
     "parsing": "Parsing File",

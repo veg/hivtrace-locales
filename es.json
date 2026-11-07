@@ -121,7 +121,8 @@
     "fraction_invalid": "La fracción de ambigüedad debe ser un número de 0 a 1.",
     "duplicate_header": "El archivo tiene la columna \"{{column}}\" más de una vez. Cada nombre de columna debe aparecer una sola vez.",
     "csv_no_data": "El archivo no tiene filas de datos. Suba un archivo CSV con una fila de encabezado y al menos un registro.",
-    "csv_delimiter": "El archivo debe estar separado por comas. Guárdelo como un archivo CSV con comas (no con punto y coma ni tabulaciones) y vuelva a subirlo."
+    "csv_delimiter": "El archivo debe estar separado por comas. Guárdelo como un archivo CSV con comas (no con punto y coma ni tabulaciones) y vuelva a subirlo.",
+    "invalid_date": "La columna \"{{column}}\" tiene una fecha que no existe (fila {{row}} de los datos). Las fechas deben tener el formato día/mes/año, por ejemplo 03/04/2023."
   },
   "validation": {
     "parsing": "Analizando archivo",
