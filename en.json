@@ -131,7 +131,7 @@
   "validation": {
     "parsing": "Parsing File",
     "parsing_note": "Hang tight. Parsing large files (100k+ records) may take a few moments because we are validating each element.",
-    "success_note": "The tab-delimited file provided cleared validation",
+    "success_note": "The comma-separated file provided cleared validation",
     "error_note": "There was an error with the comma-delimited file provided. Please review that your file is a well-formed CSV with at least the following fields.",
     "id_error": "The file needs a UID field.",
     "sequence_error": "The file needs a Genetic Sequences field.",
@@ -220,7 +220,7 @@
     "toggle_epicurve": "Show or hide the epidemic curve (cases by quarter)",
     "text_in_attributes": "Text in attributes",
     "cluster_display_info": "Only displaying clusters with cases dated in the last 12 months [use the Clusters menu to change this]",
-    "search_help": "Type in text to select columns which <em>contain the term</em>. <br /> For example, typing in <code>MSM</code> will select rows that have 'MSM' as a part of the column value. <p /> Type in space separated terms (<code>MSM IDU</code>) to search for <b>either</b> term. <p/> Type in terms in quotes (<code>'male'</code>) to search for this <b>exact</b> term.<p/> If columns have date information you can use <code>YYYYMMDD:YYYYMMDD</code> to search for date ranges.<p/> Use <code>&lt;value</code> or <code>&gt;value</code> to search numerical columns<p/>",
+    "search_help": "Type in text to select rows whose columns <em>contain the term</em>. <br /> For example, typing in <code>MSM</code> will select rows that have 'MSM' as a part of the column value. <p /> Type in space separated terms (<code>MSM IDU</code>) to search for <b>either</b> term. <p/> Type in terms in quotes (<code>'male'</code>) to search for this <b>exact</b> term.<p/> If columns have date information you can use <code>YYYYMMDD:YYYYMMDD</code> to search for date ranges.<p/> Use <code>&lt;value</code> or <code>&gt;value</code> to search numerical columns<p/>",
     "categorical": "Categorical",
     "continuous": "Continuous",
     "update_attribute": "Sequence updates compared to previous network",
@@ -368,7 +368,7 @@
   },
   "clusters_tab": {
     "cluster_id": "Cluster ID",
-    "visibillity": "Visibillity",
+    "visibillity": "Visibility",
     "list": "List",
     "view": "View",
     "expand": "Expand",
@@ -408,7 +408,7 @@
     "actions": "Actions"
   },
   "nodes_tab": {
-    "clustered_invidiuals": "Clustered Invidiuals",
+    "clustered_invidiuals": "Clustered Individuals",
     "export_to_csv": "Export to CSV",
     "filter_on": "Filter On",
     "clustered_individuals": "Clustered Individuals",
@@ -424,7 +424,7 @@
     "node_degree": "Node degree",
     "not_defined": "Not defined",
     "truncated": "Truncated due to the large number of rows ({{count}})",
-    "filter_help": "Type in text to select columns which <em>contain the term</em>. <br /> For example, typing in <code>MSM</code> will select rows that have \"MSM\" as a part of the column value. <p /> Type in space separated terms (<code>MSM IDU</code>) to search for <b>either</b> term. <p/> Type in terms in quotes (<code>\"male\"</code>) to search for this <b>exact</b> term.<p/> If columns have date information you can use <code>YYYYMMDD:YYYYMMDD</code> to search for date ranges.<p/> Use <code>&lt;value</code> or <code>&gt;value</code> to search numerical columns<p/>",
+    "filter_help": "Type in text to select rows whose columns <em>contain the term</em>. <br /> For example, typing in <code>MSM</code> will select rows that have \"MSM\" as a part of the column value. <p /> Type in space separated terms (<code>MSM IDU</code>) to search for <b>either</b> term. <p/> Type in terms in quotes (<code>\"male\"</code>) to search for this <b>exact</b> term.<p/> If columns have date information you can use <code>YYYYMMDD:YYYYMMDD</code> to search for date ranges.<p/> Use <code>&lt;value</code> or <code>&gt;value</code> to search numerical columns<p/>",
     "filter_reset": "Clear filter",
     "filter_apply": "Apply filter",
     "export_to_tsv": "Export to TSV"

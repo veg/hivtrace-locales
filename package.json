@@ -11,6 +11,9 @@
     "Joel Wertheim <jwertheim@ucsd.edu>"
   ],
   "license": "MIT",
+  "scripts": {
+    "test": "node check.js"
+  },
   "files": [
     "en.json",
     "es.json"
