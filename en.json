@@ -120,7 +120,9 @@
     "strip_drams_invalid": "The option to remove drug resistance mutations is not valid.",
     "analysis_parameter_invalid": "An analysis parameter is not valid.",
     "fraction_invalid": "The ambiguity fraction must be a number from 0 to 1.",
-    "duplicate_header": "The file has the column \"{{column}}\" more than once. Each column name must appear only once."
+    "duplicate_header": "The file has the column \"{{column}}\" more than once. Each column name must appear only once.",
+    "csv_no_data": "The file has no data rows. Please upload a CSV file with a header row and at least one record.",
+    "csv_delimiter": "The file must be comma-separated. Please save it as a CSV file with commas (not semicolons or tabs) and upload it again."
   },
   "validation": {
     "parsing": "Parsing File",
@@ -509,7 +511,10 @@
     "reset_link_request_new": "Request a new password reset link",
     "error_self_removal": "You cannot remove your own account. Ask another administrator to do it.",
     "error_self_demotion": "You cannot change your own role. Ask another administrator to do it.",
-    "error_last_admin": "This is the last administrator. Make another user an administrator first."
+    "error_last_admin": "This is the last administrator. Make another user an administrator first.",
+    "site_class_invalid": "The site class is not valid.",
+    "site_id_in_use": "That site id is already in use.",
+    "site_name_invalid": "The site name must have 1 to {{max}} characters, with no line breaks, control characters, < or >."
   },
   "job": {
     "results_load_failed": "The results could not be loaded. Please reload the page or contact us.",

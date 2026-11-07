@@ -119,7 +119,9 @@
     "strip_drams_invalid": "La opción para eliminar mutaciones de resistencia a fármacos no es válida.",
     "analysis_parameter_invalid": "Un parámetro de análisis no es válido.",
     "fraction_invalid": "La fracción de ambigüedad debe ser un número de 0 a 1.",
-    "duplicate_header": "El archivo tiene la columna \"{{column}}\" más de una vez. Cada nombre de columna debe aparecer una sola vez."
+    "duplicate_header": "El archivo tiene la columna \"{{column}}\" más de una vez. Cada nombre de columna debe aparecer una sola vez.",
+    "csv_no_data": "El archivo no tiene filas de datos. Suba un archivo CSV con una fila de encabezado y al menos un registro.",
+    "csv_delimiter": "El archivo debe estar separado por comas. Guárdelo como un archivo CSV con comas (no con punto y coma ni tabulaciones) y vuelva a subirlo."
   },
   "validation": {
     "parsing": "Analizando archivo",
@@ -508,7 +510,10 @@
     "reset_link_request_new": "Solicitar un nuevo enlace de restablecimiento de contraseña",
     "error_self_removal": "No puede eliminar su propia cuenta. Pida a otro administrador que lo haga.",
     "error_self_demotion": "No puede cambiar su propio rol. Pida a otro administrador que lo haga.",
-    "error_last_admin": "Este es el último administrador. Primero convierta a otro usuario en administrador."
+    "error_last_admin": "Este es el último administrador. Primero convierta a otro usuario en administrador.",
+    "site_class_invalid": "La clase del sitio no es válida.",
+    "site_id_in_use": "Ese identificador de sitio ya está en uso.",
+    "site_name_invalid": "El nombre del sitio debe tener de 1 a {{max}} caracteres, sin saltos de línea, caracteres de control, < ni >."
   },
   "job": {
     "results_load_failed": "No se pudieron cargar los resultados. Vuelva a cargar la página o contáctenos.",
