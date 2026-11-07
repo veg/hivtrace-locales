@@ -341,13 +341,13 @@
   "clusters_main": {
     "search_text_in_attributes": "Buscar texto en atributos",
     "expand_all": "Expandir todos",
-    "collapse_all": "Colapsar todos",
+    "collapse_all": "Contraer todos",
     "expand_filtered": "Expandir filtrados",
-    "collapse_filtered": "Colapsar filtrados",
+    "collapse_filtered": "Contraer filtrados",
     "fix_all_objects_in_place": "Fijar todos los objetos mostrados",
     "allow_all_objects_to_float": "Dejar flotar todos los objetos mostrados",
     "export_colors": "Copiar esquema de color",
-    "collapse_cluster": "Colapsar clúster",
+    "collapse_cluster": "Contraer clúster",
     "reset_layout": "Restablecer visualización",
     "category_limit": "Límite de categorías",
     "reset_layout_packed": "Restablecer visualización (compacta)",
@@ -546,7 +546,14 @@
     "never": "Nunca",
     "password_rules": "Al menos un (1) carácter de 3 de las cuatro (4) categorías (A-Z, a-z, 0-9, caracteres especiales); longitud mínima de ocho (8) caracteres para usuarios regulares y de quince (15) para administradores o usuarios con privilegios.",
     "user_management": "Administración de usuarios",
-    "variables_saved": "Variables guardadas"
+    "variables_saved": "Variables guardadas",
+    "role_user": "Usuario",
+    "role_admin": "Administrador",
+    "role_service_admin": "Admin. de servicio",
+    "role_executive": "Ejecutivo",
+    "type_string": "Texto",
+    "type_date": "Fecha",
+    "type_number": "Número"
   },
   "job": {
     "results_load_failed": "No se pudieron cargar los resultados. Vuelva a cargar la página o contáctenos.",
@@ -965,14 +972,29 @@
     "passed": "Revisión de calidad aprobada",
     "problem_rows": "{{rows}} filas con problemas",
     "sas_program": "Programa SAS n.º 3: calidad de datos",
-    "select_file": "Archivo a revisar"
+    "select_file": "Archivo a revisar",
+    "title": "Informe de homología de secuencias",
+    "report_hxb2": "Informe de HXB2",
+    "report_parenthetical": "Informe de secuencias con paréntesis",
+    "report_high_ambig": "Informe de alta ambigüedad",
+    "report_short_seq": "Informe de secuencias cortas",
+    "report_rtpr": "Informe de RTPR",
+    "report_noniupac": "Informe de no IUPAC",
+    "report_reverse": "Informe de secuencias inversas",
+    "report_duplicate": "Informe de duplicados",
+    "report_ec_code": "Informe de código EC",
+    "failed_text": "Hubo un problema en la revisión. Si persiste, escriba a {{contact}}.",
+    "in_progress_title": "Su revisión de homología está en curso.",
+    "in_progress_text": "Le avisaremos por correo al terminar. Puede cerrar esta página."
   },
   "sharing": {
     "attribute": "Atributo",
     "preferences": "Preferencias de uso compartido",
     "saved": "Preferencias guardadas",
     "title": "Uso compartido de atributos (Clase III)",
-    "toggle": "Compartir"
+    "toggle": "Compartir",
+    "on": "Sí",
+    "off": "No"
   },
   "unauthorized": {
     "body": "No tiene autorización para ver esta página.",
@@ -995,6 +1017,8 @@
     "preparing": "Preparando datos",
     "preparing_wait": "Espere un momento.",
     "quality_report": "Informe de calidad",
-    "review_highlighted": "Revise lo resaltado y elija una acción."
+    "review_highlighted": "Revise lo resaltado y elija una acción.",
+    "invalid_actions": "Acciones para filas no válidas",
+    "valid_actions": "Acciones del archivo"
   }
 }

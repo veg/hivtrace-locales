@@ -546,7 +546,14 @@
     "never": "Never",
     "password_rules": "At least one (1) character from 3 of the four (4) character categories (A-Z, a-z, 0-9, special characters), and minimum length of eight (8) characters for regular user passwords, and minimum length of fifteen (15) characters for administrators or privileged users.",
     "user_management": "User Management",
-    "variables_saved": "Saved Variable Settings"
+    "variables_saved": "Saved Variable Settings",
+    "role_user": "User",
+    "role_admin": "Administrator",
+    "role_service_admin": "Service admin",
+    "role_executive": "Executive",
+    "type_string": "String",
+    "type_date": "Date",
+    "type_number": "Number"
   },
   "job": {
     "results_load_failed": "The results could not be loaded. Please reload the page or contact us.",
@@ -965,14 +972,29 @@
     "passed": "Passed Quality Check!",
     "problem_rows": "{{rows}} Problematic Rows",
     "sas_program": "SAS Program #3 - Data Quality Preparation",
-    "select_file": "Select File to Screen"
+    "select_file": "Select File to Screen",
+    "title": "Sequence Homology Screening Report",
+    "report_hxb2": "HXB2 Report",
+    "report_parenthetical": "Parenthetical Sequence Report",
+    "report_high_ambig": "High Ambiguity Report",
+    "report_short_seq": "Short Sequence Report",
+    "report_rtpr": "RTPR Report",
+    "report_noniupac": "Non-IUPAC Report",
+    "report_reverse": "Reverse Report",
+    "report_duplicate": "Duplicate Report",
+    "report_ec_code": "EC Code Report",
+    "failed_text": "There was a problem while conducting the screening process. Please contact {{contact}} if the issue persists.",
+    "in_progress_title": "Your Homology Screening is in Progress.",
+    "in_progress_text": "You will be notified via email when it has been completed. Feel free to close your tab or browser and grab a cup of coffee."
   },
   "sharing": {
     "attribute": "Attribute",
     "preferences": "Multi-Jurisdictional Sharing Preferences",
     "saved": "Saved Attribute Sharing Settings",
     "title": "Class III Attribute Sharing Options",
-    "toggle": "Toggle"
+    "toggle": "Toggle",
+    "on": "On",
+    "off": "Off"
   },
   "unauthorized": {
     "body": "You are unauthorized to access this page.",
@@ -995,6 +1017,8 @@
     "preparing": "Preparing Data for Analysis",
     "preparing_wait": "Hang tight. Preparing dataset for analysis.",
     "quality_report": "Quality report",
-    "review_highlighted": "Review the highlighted rows and cells and choose an action."
+    "review_highlighted": "Review the highlighted rows and cells and choose an action.",
+    "invalid_actions": "Actions for invalid rows",
+    "valid_actions": "Actions for the file"
   }
 }
