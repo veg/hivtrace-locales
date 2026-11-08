@@ -675,7 +675,7 @@
     "network_size": "Tamaño de la red",
     "parameters_heading": "El trabajo se envió con los siguientes parámetros",
     "distance_threshold": "Umbral de distancia",
-    "minimum_overlap": "Superposición mínima",
+    "minimum_overlap": "Traslape mínimo",
     "handle_ambiguities": "Manejo de ambigüedades",
     "ambiguity_fraction": "Fracción de ambigüedad",
     "remove_drams": "Eliminar DRAMS",
