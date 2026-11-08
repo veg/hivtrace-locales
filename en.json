@@ -1143,6 +1143,17 @@
     "p_minimum_overlap": "Minimum Overlap",
     "p_handle_ambiguities": "Handle Ambiguities",
     "p_notify": "Notify When Completed",
-    "busted_alignment_desc": "The FASTA formatted multiple sequence alignment that is to be uploaded. Please see <a href=\"#data-formats\">Data Formats</a> for details."
+    "busted_alignment_desc": "The FASTA formatted multiple sequence alignment that is to be uploaded. Please see <a href=\"#data-formats\">Data Formats</a> for details.",
+    "euplotid_mtdna": "Euplotid mtDNA",
+    "alt_yeast_code": "Alternative Yeast Nuclear",
+    "ascidian_mtdna": "Ascidian mtDNA",
+    "flatworm_mtdna": "Flatworm mtDNA",
+    "blepharisma_code": "Blepharisma Nuclear",
+    "df_intro": "Datamonkey automatically recognizes five aligned sequence data formats and also autodetects whether the data is nucleotide (codon) or aminoacid.",
+    "fmt_nexus": "The following NEXUS blocks are supported: <code>DATA</code>, <code>CHARACTERS</code>, <code>TAXA</code>, <code>ASSUMPTIONS</code> (for data partitioning) and <code>TREES</code>.",
+    "fmt_phylip": "PHYLIP option characters in the first line are ignored for both sequential and interleaved formats.",
+    "fmt_fasta_sequential": "<b>Sequential:</b> Taxa names are preceded by <code>&gt;</code> (or <code>#</code>), and complete sequence data follow the name of the taxon.",
+    "fmt_fasta_interleaved": "<b>Interleaved:</b> List of taxa names preceded by <code>&gt;</code> (or <code>#</code>), and blocks of sequence data follow in the same order as the names of the taxa.",
+    "fmt_examples": "For examples of each format, please visit the <a href=\"http://hyphy.org/w/index.php/DATA_FILE_PRINT_FORMAT\">hyphy wiki page</a>"
   }
 }

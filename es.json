@@ -1143,6 +1143,17 @@
     "p_minimum_overlap": "Superposición mínima",
     "p_handle_ambiguities": "Manejo de ambigüedades",
     "p_notify": "Notificar al terminar",
-    "busted_alignment_desc": "El alineamiento múltiple de secuencias en formato FASTA que se va a subir. Consulte <a href=\"#data-formats\">Formatos de datos</a> para más detalles."
+    "busted_alignment_desc": "El alineamiento múltiple de secuencias en formato FASTA que se va a subir. Consulte <a href=\"#data-formats\">Formatos de datos</a> para más detalles.",
+    "euplotid_mtdna": "ADNmt de euplótidos",
+    "alt_yeast_code": "Código nuclear alternativo de levaduras",
+    "ascidian_mtdna": "ADNmt de ascidias",
+    "flatworm_mtdna": "ADNmt de platelmintos",
+    "blepharisma_code": "Código nuclear de Blepharisma",
+    "df_intro": "Datamonkey reconoce automáticamente cinco formatos de datos de secuencias alineadas y detecta si los datos son de nucleótidos (codones) o de aminoácidos.",
+    "fmt_nexus": "Se admiten los siguientes bloques NEXUS: <code>DATA</code>, <code>CHARACTERS</code>, <code>TAXA</code>, <code>ASSUMPTIONS</code> (para la partición de datos) y <code>TREES</code>.",
+    "fmt_phylip": "Los caracteres de opciones de PHYLIP de la primera línea se ignoran tanto en el formato secuencial como en el intercalado.",
+    "fmt_fasta_sequential": "<b>Secuencial:</b> Los nombres de los taxones van precedidos de <code>&gt;</code> (o <code>#</code>), y los datos completos de la secuencia siguen al nombre del taxón.",
+    "fmt_fasta_interleaved": "<b>Intercalado:</b> Lista de nombres de taxones precedidos por <code>&gt;</code> (o <code>#</code>), seguida de bloques de datos de secuencia en el mismo orden que los nombres de los taxones.",
+    "fmt_examples": "Para ver ejemplos de cada formato, visite la <a href=\"http://hyphy.org/w/index.php/DATA_FILE_PRINT_FORMAT\">página wiki de HyPhy</a>"
   }
 }
